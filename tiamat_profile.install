@@ -1,0 +1,71 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the profilename install profile.
+ */
+
+use Drupal\user\Entity\User;
+use Drupal\shortcut\Entity\Shortcut;
+
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+function tiamat_profile_install() {
+  // Assign user 1 the "administrator" role.
+  $user = User::load(1);
+  $user->addRole('administrator');
+  $user->save();
+
+  // We install some menu links, so we have to rebuild the router, to ensure the
+  // menu links are valid.
+  \Drupal::service('router.builder')->rebuildIfNeeded();
+
+  // Populate the default shortcut set.
+  $shortcut = Shortcut::create([
+    'shortcut_set' => 'default',
+    'title' => t('Add content'),
+    'weight' => -20,
+    'link' => ['uri' => 'internal:/node/add'],
+  ]);
+  $shortcut->save();
+
+  $shortcut = Shortcut::create([
+    'shortcut_set' => 'default',
+    'title' => t('All content'),
+    'weight' => -19,
+    'link' => ['uri' => 'internal:/admin/content'],
+  ]);
+  $shortcut->save();
+
+  /**
+   * Create inital users for the Web Team
+   */
+  $users = ['jesp3304', 'mibo7729', 'alco6164', 'joni1621', 'jako6198', 'crafts'];
+  foreach( $users as $i ){
+    User::create([
+      'name' => $i,
+      'mail' => "{$i}@colorado.edu",
+      'pass' => 'nextest',
+      'status' => 1,
+      'roles' => 'developer'
+    ])->enforceIsNew()->save();
+  }
+
+  /**
+   * Create inital users for the UX Team
+   */
+  $users = ['linebarg', 'mortone', 'brokaw', 'wetu1300', 'fraziere'];
+  foreach( $users as $i ){
+    User::create([
+      'name' => $i,
+      'mail' => "{$i}@colorado.edu",
+      'pass' => 'nextest',
+      'status' => 1,
+      'roles' => 'site_owner'
+    ])->enforceIsNew()->save();
+  }
+}
