@@ -1,9 +1,0 @@
-langcode: en
-status: true
-dependencies:
-  module:
-    - media
-id: media.editor_embed_image
-label: 'Editor Embed Image'
-targetEntityType: media
-cache: true

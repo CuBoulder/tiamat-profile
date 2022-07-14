@@ -1,16 +1,17 @@
+uuid: cc444423-9ea5-4b3c-80b3-a73614fdae35
 langcode: en
 status: true
 dependencies: {  }
 id: video
 label: Video
-description: 'A video from a remote source such as youtube or vimeo'
+description: ''
 source: 'oembed:video'
 queue_thumbnail_downloads: false
 new_revision: false
 source_configuration:
-  thumbnails_directory: 'public://oembed_thumbnails'
+  source_field: field_media_oembed_video
+  thumbnails_directory: 'public://oembed_thumbnails/[date:custom:Y-m]'
   providers:
     - YouTube
     - Vimeo
-  source_field: field_media_oembed_video
 field_map: {  }

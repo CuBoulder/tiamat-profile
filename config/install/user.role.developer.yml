@@ -1,70 +1,88 @@
-uuid: 320fbbf3-a30e-4f5c-a796-14b775003659
+uuid: ffee466f-86dc-4b78-b081-a2f9fc66e679
 langcode: en
 status: true
-dependencies: {  }
-_core:
-  default_config_hash: PojQZnFGFC6C7L2x7kjWSBMrN2pA7tzCnWgCmo-sr4g
+dependencies:
+  config:
+    - core.entity_view_display.node.ucb_article.default
+    - core.entity_view_display.node.ucb_basic_page.default
+    - media.type.image
+    - media.type.video
+    - node.type.ucb_article
+    - node.type.ucb_basic_page
+    - taxonomy.vocabulary.byline
+    - taxonomy.vocabulary.categories
+    - taxonomy.vocabulary.tags
+  module:
+    - block
+    - config
+    - consumers
+    - layout_builder
+    - media
+    - node
+    - path
+    - pathauto
+    - shortcut
+    - simplesamlphp_auth
+    - system
+    - taxonomy
+    - toolbar
+    - views_ui
+    - webform
 id: developer
 label: Developer
-weight: 5
+weight: 4
 is_admin: null
 permissions:
   - 'access administration pages'
   - 'access any webform configuration'
-  - 'access comments'
   - 'access content overview'
-  - 'access contextual links'
   - 'access media overview'
   - 'access own webform configuration'
+  - 'access shortcuts'
   - 'access site in maintenance mode'
   - 'access site reports'
   - 'access taxonomy overview'
   - 'access toolbar'
-  - 'access user contact forms'
   - 'access user profiles'
   - 'access webform help'
   - 'access webform overview'
   - 'access webform submission user'
-  - 'administer block_content display'
-  - 'administer block_content fields'
+  - 'add consumer entities'
+  - 'administer account settings'
   - 'administer blocks'
-  - 'administer contact forms'
-  - 'administer contact_message display'
-  - 'administer contact_message fields'
-  - 'administer embed buttons'
-  - 'administer media display'
-  - 'administer media fields'
+  - 'administer consumer entities'
+  - 'administer content types'
+  - 'administer media'
+  - 'administer media types'
   - 'administer menu'
   - 'administer modules'
-  - 'administer node display'
-  - 'administer node fields'
-  - 'administer paragraph display'
-  - 'administer paragraph fields'
+  - 'administer nodes'
   - 'administer pathauto'
   - 'administer permissions'
-  - 'administer search'
   - 'administer shortcuts'
+  - 'administer simplesamlphp authentication'
   - 'administer site configuration'
   - 'administer software updates'
   - 'administer taxonomy'
-  - 'administer taxonomy_term display'
-  - 'administer taxonomy_term fields'
   - 'administer themes'
-  - 'administer user display'
+  - 'administer url aliases'
+  - 'administer users'
   - 'administer views'
   - 'administer webform'
   - 'administer webform element access'
   - 'administer webform submission'
+  - 'change saml authentication setting'
+  - 'configure all ucb_basic_page node layout overrides'
+  - 'configure editable ucb_article node layout overrides'
+  - 'configure editable ucb_basic_page node layout overrides'
+  - 'create and edit custom blocks'
   - 'create image media'
   - 'create media'
-  - 'create page content'
   - 'create terms in byline'
-  - 'create terms in category'
-  - 'create terms in department'
+  - 'create terms in categories'
   - 'create terms in tags'
-  - 'create terms in ucb_person_job_type'
   - 'create ucb_article content'
-  - 'create ucb_person content'
+  - 'create ucb_basic_page content'
   - 'create url aliases'
   - 'create video media'
   - 'create webform'
@@ -72,71 +90,60 @@ permissions:
   - 'delete all revisions'
   - 'delete any image media'
   - 'delete any media'
-  - 'delete any page content'
   - 'delete any ucb_article content'
-  - 'delete any ucb_person content'
+  - 'delete any ucb_basic_page content'
   - 'delete any video media'
   - 'delete any webform'
   - 'delete any webform submission'
   - 'delete media'
-  - 'delete orphan revisions'
+  - 'delete own consumer entities'
   - 'delete own image media'
-  - 'delete own page content'
   - 'delete own ucb_article content'
-  - 'delete own ucb_person content'
+  - 'delete own ucb_basic_page content'
   - 'delete own video media'
   - 'delete own webform'
   - 'delete own webform submission'
-  - 'delete page revisions'
   - 'delete terms in byline'
-  - 'delete terms in category'
-  - 'delete terms in department'
+  - 'delete terms in categories'
   - 'delete terms in tags'
-  - 'delete terms in ucb_person_job_type'
   - 'delete ucb_article revisions'
-  - 'delete ucb_person revisions'
+  - 'delete ucb_basic_page revisions'
   - 'edit any image media'
-  - 'edit any page content'
   - 'edit any ucb_article content'
-  - 'edit any ucb_person content'
+  - 'edit any ucb_basic_page content'
   - 'edit any video media'
   - 'edit any webform'
   - 'edit any webform submission'
   - 'edit own image media'
-  - 'edit own page content'
   - 'edit own ucb_article content'
-  - 'edit own ucb_person content'
+  - 'edit own ucb_basic_page content'
   - 'edit own video media'
   - 'edit own webform'
   - 'edit own webform submission'
   - 'edit terms in byline'
-  - 'edit terms in category'
-  - 'edit terms in department'
+  - 'edit terms in categories'
   - 'edit terms in tags'
-  - 'edit terms in ucb_person_job_type'
+  - 'edit webform assets'
   - 'export configuration'
   - 'import configuration'
   - 'link to any page'
+  - 'notify of path changes'
   - 'revert all revisions'
-  - 'revert page revisions'
   - 'revert ucb_article revisions'
-  - 'revert ucb_person revisions'
+  - 'revert ucb_basic_page revisions'
   - 'switch shortcut sets'
   - 'synchronize configuration'
   - 'update any media'
   - 'update media'
-  - 'use advanced search'
-  - 'use text format full_html'
-  - 'use text format wysiwyg'
+  - 'update own consumer entities'
   - 'view all media revisions'
   - 'view all revisions'
   - 'view any webform submission'
+  - 'view own consumer entities'
   - 'view own unpublished content'
   - 'view own unpublished media'
   - 'view own webform submission'
-  - 'view page revisions'
   - 'view the administration theme'
   - 'view ucb_article revisions'
-  - 'view ucb_person revisions'
-  - 'view unpublished paragraphs'
+  - 'view ucb_basic_page revisions'
   - 'view user email addresses'

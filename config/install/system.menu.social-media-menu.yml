@@ -1,8 +1,0 @@
-uuid: b7acfc21-98d4-4e6c-9f65-471850d54d7f
-langcode: en
-status: true
-dependencies: {  }
-id: social-media-menu
-label: 'Social Media Links'
-description: ''
-locked: false
