@@ -23,6 +23,8 @@ install:
   - pathauto
   - taxonomy
   - dblog
+  - layout_builder
+  - layout_discovery
   - search
   - shortcut
   - toolbar
@@ -40,7 +42,6 @@ install:
   - gin_toolbar
   - media
   - media_library
-  - paragraphs
   - field_group
   - twig_tweak
   - telephone

@@ -37,10 +37,12 @@ function ucb2021_profile_modules_installed( $modules ){
     $installer = \Drupal::service('module_installer');
     // install or uninstall modules once the profile has installed
     $installer->install([
+      'ucb_d9_content_entities',
       'ucb2021_base_site_info',
       'ucb_default_content'
     ]);
-    \Drupal::logger('ucb2021_profile')->notice('Installed CU Site Info Footer');
-    \Drupal::logger('ucb2021_profile')->notice('Installed CU Default Content');
+    \Drupal::logger('boulderD9_profile')->notice('Installed CU Entity Schemas');
+    \Drupal::logger('boulderD9_profile')->notice('Installed CU Site Info Footer');
+    \Drupal::logger('boulderD9_profile')->notice('Installed CU Default Content');
   }
 }
