@@ -1,5 +1,5 @@
 {
-    "name": "cu-boulder/boulderD9_profile",
+    "name": "cu-boulder/boulder_d9_profile",
     "description": "Drupal 9 base install profile for CU Boulder",
     "license": "GPL2.0",
     "type": "drupal-custom-profile"
