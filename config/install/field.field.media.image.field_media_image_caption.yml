@@ -1,0 +1,21 @@
+uuid: f712b5cd-00bd-4c0b-9c69-c1b387dcf5fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_image_caption
+    - media.type.image
+  module:
+    - text
+id: media.image.field_media_image_caption
+field_name: field_media_image_caption
+entity_type: media
+bundle: image
+label: Caption
+description: 'Optional text to add context or content to this image.  '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

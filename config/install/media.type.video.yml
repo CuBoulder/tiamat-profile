@@ -1,10 +1,10 @@
-uuid: cc444423-9ea5-4b3c-80b3-a73614fdae35
+uuid: 5ae3c374-32ad-4a60-9e42-8d44d48e5c53
 langcode: en
 status: true
 dependencies: {  }
 id: video
 label: Video
-description: ''
+description: 'A video from a remote source such as YouTube or Vimeo.'
 source: 'oembed:video'
 queue_thumbnail_downloads: false
 new_revision: false
