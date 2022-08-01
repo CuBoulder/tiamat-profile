@@ -1,0 +1,10 @@
+uuid: 288d37d9-08b5-40aa-a5f5-3743ead1de02
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.focal_image_wide
+label: 'Focal Image - Wide'
+targetEntityType: media
+cache: true
