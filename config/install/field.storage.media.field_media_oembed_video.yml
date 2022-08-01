@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - media
+_core:
+  default_config_hash: NTKNkDagv9j_oZNNfz-dEVaZbItSY6mWe8z-CMzK-QA
 id: media.field_media_oembed_video
 field_name: field_media_oembed_video
 entity_type: media

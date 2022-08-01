@@ -2,6 +2,8 @@ uuid: 713f0ea9-b2f6-4ad3-af20-713a1ef10b9a
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: q2z1qBzXMQj4dEIIR4GoEWFa2LDIlvsnR7Kd-2HXMtE
 id: image
 label: Image
 description: 'Images that can be reused across the site.  '
