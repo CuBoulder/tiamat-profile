@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - ucb_site_configuration
+  theme:
+    - boulderD9_base
+id: site_contact_info_footer
+theme: boulderD9_base
+region: footer
+weight: 0
+provider: null
+plugin: site_info
+settings:
+  id: site_info
+  label: 'Site Contact Info Footer'
+  label_display: visible
+  provider: ucb_site_configuration
+visibility: {  }
