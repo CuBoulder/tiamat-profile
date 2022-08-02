@@ -56,6 +56,7 @@ install:
   - features
   - cu_boulder_content_types
   - ucb_site_configuration
+  - ucb_user_invite
   
 # Required modules
 # Note that any dependencies of the modules listed here will be installed automatically.
