@@ -25,6 +25,7 @@ install:
   - dblog
   - layout_builder
   - layout_discovery
+  - gin_lb
   - search
   - shortcut
   - toolbar
