@@ -1,0 +1,25 @@
+uuid: 068c3d65-70eb-49d5-865e-a9358e55cead
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.social-media-menu
+  module:
+    - system
+  theme:
+    - boulderD9_base
+id: social_media_links
+theme: boulderD9_base
+region: social
+weight: 0
+provider: null
+plugin: 'system_menu_block:social-media-menu'
+settings:
+  id: 'system_menu_block:social-media-menu'
+  label: 'Social Media Links'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }
