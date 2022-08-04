@@ -21,6 +21,7 @@ install:
   - options
   - path
   - pathauto
+  - paragraphs
   - taxonomy
   - dblog
   - layout_builder
