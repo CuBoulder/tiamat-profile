@@ -1,4 +1,3 @@
-uuid: 9edba0de-6ad1-4e57-910f-af5a9e9d33fa
 langcode: en
 status: true
 dependencies:
@@ -6,7 +5,7 @@ dependencies:
     - core.entity_view_mode.media.focal_image_square
     - field.field.media.image.field_media_image
     - field.field.media.image.field_media_image_caption
-    - image.style.thumbnail
+    - image.style.focal_image_square
     - media.type.image
   module:
     - image
@@ -47,7 +46,7 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: thumbnail
+      image_style: focal_image_square
       image_loading:
         attribute: lazy
     third_party_settings: {  }
