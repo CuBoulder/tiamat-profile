@@ -19,5 +19,6 @@ required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
+settings: 
+  label_display: '0'
 field_type: text_long
