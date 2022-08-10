@@ -2,11 +2,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.media.focal_image_wide
-    - field.field.media.image.field_media_image
-    - field.field.media.image.field_media_image_caption
-    - image.style.focal_image_wide
-    - media.type.image
+    - core.entity_view_mode.media.media_library
+    - field.field.media.video.field_media_oembed_video
+    - image.style.medium
+    - media.type.video
   module:
     - image
     - layout_builder
@@ -14,17 +13,17 @@ third_party_settings:
   layout_builder:
     enabled: false
     allow_custom: false
-id: media.image.focal_image_wide
+id: media.video.media_library
 targetEntityType: media
-bundle: image
-mode: focal_image_wide
+bundle: video
+mode: media_library
 content:
-  field_media_image:
+  thumbnail:
     type: image
     label: hidden
     settings:
       image_link: ''
-      image_style: focal_image_wide
+      image_style: medium
       image_loading:
         attribute: lazy
     third_party_settings: {  }
@@ -32,7 +31,6 @@ content:
     region: content
 hidden:
   created: true
-  field_media_image_caption: true
+  field_media_oembed_video: true
   name: true
-  thumbnail: true
   uid: true
