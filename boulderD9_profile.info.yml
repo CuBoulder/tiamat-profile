@@ -21,6 +21,7 @@ install:
   - options
   - path
   - pathauto
+  - paragraphs
   - taxonomy
   - dblog
   - layout_builder
@@ -58,6 +59,7 @@ install:
   - cu_boulder_content_types
   - ucb_site_configuration
   - ucb_user_invite
+  - ucb_default_content
   
 # Required modules
 # Note that any dependencies of the modules listed here will be installed automatically.

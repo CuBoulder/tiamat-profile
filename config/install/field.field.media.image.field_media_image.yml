@@ -37,4 +37,5 @@ settings:
     title: ''
     width: null
     height: null
+    label_display: '0'
 field_type: image
