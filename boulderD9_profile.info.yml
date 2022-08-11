@@ -50,6 +50,9 @@ install:
   - focal_point
   - serialization
   - jsonapi
+  - consumer_image_styles
+  - jsonapi_extras
+  - consumers
   - inline_form_errors
   - simplesamlphp_auth
   - externalauth
@@ -59,6 +62,7 @@ install:
   - ucb_site_configuration
   - ucb_user_invite
   - ucb_default_content
+  - ucb_focal_image_enable
   
 # Required modules
 # Note that any dependencies of the modules listed here will be installed automatically.
