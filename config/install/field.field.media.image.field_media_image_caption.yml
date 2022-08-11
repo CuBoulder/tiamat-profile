@@ -1,4 +1,3 @@
-uuid: f712b5cd-00bd-4c0b-9c69-c1b387dcf5fc
 langcode: en
 status: true
 dependencies:
@@ -7,8 +6,6 @@ dependencies:
     - media.type.image
   module:
     - text
-_core:
-  default_config_hash: 8qvR5XP9DMVGnGXVsK-q-aiQH5Fb5tYlIBFnFzFKqas
 id: media.image.field_media_image_caption
 field_name: field_media_image_caption
 entity_type: media
@@ -19,6 +16,5 @@ required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: 
-  label_display: '0'
+settings: {  }
 field_type: text_long
