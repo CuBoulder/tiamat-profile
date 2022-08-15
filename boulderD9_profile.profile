@@ -38,9 +38,11 @@ function ucb2021_profile_modules_installed( $modules ){
     // install or uninstall modules once the profile has installed
     $installer->install([
       'ucb_default_content',
-      'ucb_focal_image_enable'
+      'ucb_focal_image_enable',
+      'ucb_person_title'
     ]);
     \Drupal::logger('boulderD9_profile')->notice('Installed CU Default Homepage Content');
     \Drupal::logger('ucb2021_profile')->notice('Installed CU Focal Image Enable');
+    \Drupal::logger('boulderD9_profile')->notice('Installed CU Person Title');
   }
 }
