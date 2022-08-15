@@ -26,6 +26,7 @@ install:
   - dblog
   - layout_builder
   - layout_discovery
+  - layout_builder_modal
   - gin_lb
   - search
   - shortcut
