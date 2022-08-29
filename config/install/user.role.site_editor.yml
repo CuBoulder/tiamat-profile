@@ -3,12 +3,163 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.node.basic_page.default
     - filter.format.wysiwyg
+    - media.type.image
+    - media.type.video
+    - node.type.basic_page
+    - node.type.how_to_page
+    - node.type.ucb_article
+    - node.type.ucb_article_list
+    - node.type.ucb_people_list_page
+    - node.type.ucb_person
+    - taxonomy.vocabulary.byline
+    - taxonomy.vocabulary.categories
+    - taxonomy.vocabulary.category
+    - taxonomy.vocabulary.department
+    - taxonomy.vocabulary.tags
+    - taxonomy.vocabulary.ucb_person_job_type
   module:
+    - contextual
+    - entity_reference_revisions
+    - file
     - filter
+    - layout_builder
+    - media
+    - node
+    - paragraphs
+    - path
+    - search
+    - shortcut
+    - system
+    - taxonomy
+    - toolbar
+    - webform
+_core:
+  default_config_hash: WKYmhgKWEElZz8f-qDN1hkE-nbQaEND_MMTKZbg7As8
 id: site_editor
 label: 'Site Editor'
 weight: 4
 is_admin: null
 permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access media overview'
+  - 'access shortcuts'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'access webform help'
+  - 'access webform overview'
+  - 'administer content types'
+  - 'administer nodes'
+  - 'bypass node access'
+  - 'configure all basic_page node layout overrides'
+  - 'configure any layout'
+  - 'configure editable basic_page node layout overrides'
+  - 'create and edit custom blocks'
+  - 'create basic_page content'
+  - 'create how_to_page content'
+  - 'create image media'
+  - 'create media'
+  - 'create terms in byline'
+  - 'create terms in categories'
+  - 'create terms in category'
+  - 'create terms in department'
+  - 'create terms in tags'
+  - 'create terms in ucb_person_job_type'
+  - 'create ucb_article content'
+  - 'create ucb_article_list content'
+  - 'create ucb_people_list_page content'
+  - 'create ucb_person content'
+  - 'create url aliases'
+  - 'create video media'
+  - 'create webform'
+  - 'customize shortcut links'
+  - 'delete all revisions'
+  - 'delete any basic_page content'
+  - 'delete any how_to_page content'
+  - 'delete any image media'
+  - 'delete any media'
+  - 'delete any ucb_article content'
+  - 'delete any ucb_article_list content'
+  - 'delete any ucb_people_list_page content'
+  - 'delete any ucb_person content'
+  - 'delete any video media'
+  - 'delete basic_page revisions'
+  - 'delete how_to_page revisions'
+  - 'delete media'
+  - 'delete orphan revisions'
+  - 'delete own basic_page content'
+  - 'delete own how_to_page content'
+  - 'delete own image media'
+  - 'delete own ucb_article content'
+  - 'delete own ucb_article_list content'
+  - 'delete own ucb_people_list_page content'
+  - 'delete own ucb_person content'
+  - 'delete own video media'
+  - 'delete own webform'
+  - 'delete own webform submission'
+  - 'delete terms in byline'
+  - 'delete terms in categories'
+  - 'delete terms in category'
+  - 'delete terms in department'
+  - 'delete terms in tags'
+  - 'delete terms in ucb_person_job_type'
+  - 'delete ucb_article revisions'
+  - 'delete ucb_article_list revisions'
+  - 'delete ucb_people_list_page revisions'
+  - 'delete ucb_person revisions'
+  - 'edit any basic_page content'
+  - 'edit any how_to_page content'
+  - 'edit any image media'
+  - 'edit any ucb_article content'
+  - 'edit any ucb_article_list content'
+  - 'edit any ucb_people_list_page content'
+  - 'edit any ucb_person content'
+  - 'edit any video media'
+  - 'edit own basic_page content'
+  - 'edit own how_to_page content'
+  - 'edit own image media'
+  - 'edit own ucb_article content'
+  - 'edit own ucb_article_list content'
+  - 'edit own ucb_people_list_page content'
+  - 'edit own ucb_person content'
+  - 'edit own video media'
+  - 'edit own webform'
+  - 'edit own webform submission'
+  - 'edit terms in byline'
+  - 'edit terms in categories'
+  - 'edit terms in category'
+  - 'edit terms in department'
+  - 'edit terms in tags'
+  - 'edit terms in ucb_person_job_type'
+  - 'link to any page'
+  - 'revert all revisions'
+  - 'revert basic_page revisions'
+  - 'revert how_to_page revisions'
+  - 'revert ucb_article revisions'
+  - 'revert ucb_article_list revisions'
+  - 'revert ucb_people_list_page revisions'
+  - 'revert ucb_person revisions'
+  - 'search content'
+  - 'switch shortcut sets'
+  - 'update any media'
+  - 'update media'
   - 'use text format wysiwyg'
+  - 'view all media revisions'
+  - 'view all revisions'
+  - 'view basic_page revisions'
+  - 'view how_to_page revisions'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view own webform submission'
+  - 'view the administration theme'
+  - 'view ucb_article revisions'
+  - 'view ucb_article_list revisions'
+  - 'view ucb_people_list_page revisions'
+  - 'view ucb_person revisions'
+  - 'view unpublished paragraphs'
+  - 'view user email addresses'
