@@ -22,6 +22,8 @@ dependencies:
     - taxonomy.vocabulary.ucb_person_job_type
   module:
     - block
+    - block_content
+    - comment
     - config
     - consumers
     - contact
@@ -30,8 +32,10 @@ dependencies:
     - embed
     - entity_reference_revisions
     - externalauth
+    - field_ui
     - file
     - filter
+    - image
     - layout_builder
     - layout_builder_modal
     - media
@@ -41,15 +45,17 @@ dependencies:
     - pathauto
     - search
     - shortcut
+    - simplesamlphp_auth
     - system
     - taxonomy
     - toolbar
     - ucb_site_configuration
     - ucb_user_invite
+    - update
     - views_ui
     - webform
 _core:
-  default_config_hash: A1LlbBpqbwtOygeaA6srbcKRwgt6eZ0qmmqsGx3qG2w
+  default_config_hash: pu1rWvIV2zsp8-El8rer0xLHSh4tpXIDAdIzAGhhkrc
 id: developer
 label: Developer
 weight: 2
@@ -57,6 +63,8 @@ is_admin: null
 permissions:
   - 'access administration pages'
   - 'access any webform configuration'
+  - 'access comments'
+  - 'access content'
   - 'access content overview'
   - 'access contextual links'
   - 'access files overview'
@@ -74,31 +82,61 @@ permissions:
   - 'access webform submission user'
   - 'add consumer entities'
   - 'administer account settings'
+  - 'administer block_content display'
+  - 'administer block_content fields'
+  - 'administer block_content form display'
   - 'administer blocks'
+  - 'administer comment display'
+  - 'administer comment fields'
+  - 'administer comment form display'
+  - 'administer comment types'
+  - 'administer comments'
   - 'administer consumer entities'
   - 'administer contact forms'
+  - 'administer contact_message display'
+  - 'administer contact_message fields'
+  - 'administer contact_message form display'
   - 'administer content types'
   - 'administer crop'
   - 'administer crop types'
+  - 'administer display modes'
   - 'administer embed buttons'
+  - 'administer filters'
+  - 'administer image styles'
   - 'administer layout builder modal'
   - 'administer media'
+  - 'administer media display'
+  - 'administer media fields'
+  - 'administer media form display'
   - 'administer media types'
   - 'administer menu'
   - 'administer modules'
+  - 'administer node display'
+  - 'administer node fields'
+  - 'administer node form display'
   - 'administer nodes'
+  - 'administer paragraph display'
+  - 'administer paragraph fields'
+  - 'administer paragraph form display'
   - 'administer paragraphs settings'
   - 'administer paragraphs types'
   - 'administer pathauto'
   - 'administer permissions'
   - 'administer search'
   - 'administer shortcuts'
+  - 'administer simplesamlphp authentication'
   - 'administer site configuration'
   - 'administer software updates'
   - 'administer taxonomy'
+  - 'administer taxonomy_term display'
+  - 'administer taxonomy_term fields'
+  - 'administer taxonomy_term form display'
   - 'administer themes'
   - 'administer ucb site'
   - 'administer url aliases'
+  - 'administer user display'
+  - 'administer user fields'
+  - 'administer user form display'
   - 'administer user invite'
   - 'administer users'
   - 'administer views'
@@ -106,6 +144,9 @@ permissions:
   - 'administer webform element access'
   - 'administer webform submission'
   - 'bypass node access'
+  - 'cancel account'
+  - 'change own username'
+  - 'change saml authentication setting'
   - 'configure all basic_page node layout overrides'
   - 'configure any layout'
   - 'configure editable basic_page node layout overrides'
@@ -140,6 +181,7 @@ permissions:
   - 'delete any video media'
   - 'delete any webform'
   - 'delete any webform submission'
+  - 'delete authmap'
   - 'delete basic_page revisions'
   - 'delete how_to_page revisions'
   - 'delete media'
@@ -177,6 +219,7 @@ permissions:
   - 'edit any webform submission'
   - 'edit behavior plugin settings'
   - 'edit own basic_page content'
+  - 'edit own comments'
   - 'edit own how_to_page content'
   - 'edit own image media'
   - 'edit own ucb_article content'
@@ -200,6 +243,8 @@ permissions:
   - 'import configuration'
   - 'invite users'
   - 'link to any page'
+  - 'notify of path changes'
+  - 'post comments'
   - 'revert all revisions'
   - 'revert basic_page revisions'
   - 'revert how_to_page revisions'
@@ -208,6 +253,8 @@ permissions:
   - 'revert ucb_people_list_page revisions'
   - 'revert ucb_person revisions'
   - 'search content'
+  - 'select account cancellation method'
+  - 'skip comment approval'
   - 'switch shortcut sets'
   - 'synchronize configuration'
   - 'update any media'
@@ -222,6 +269,7 @@ permissions:
   - 'view authmap'
   - 'view basic_page revisions'
   - 'view how_to_page revisions'
+  - 'view media'
   - 'view own consumer entities'
   - 'view own unpublished content'
   - 'view own unpublished media'
@@ -232,4 +280,5 @@ permissions:
   - 'view ucb_people_list_page revisions'
   - 'view ucb_person revisions'
   - 'view unpublished paragraphs'
+  - 'view update notifications'
   - 'view user email addresses'
