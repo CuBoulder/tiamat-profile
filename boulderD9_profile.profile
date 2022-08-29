@@ -13,14 +13,14 @@ use Drupal\Core\Form\FormStateInterface;
  *
  * Allows the profile to alter the site configuration form.
  */
-function ucb2021_profile_form_install_configure_form_alter(&$form, FormStateInterface $form_state) {
-  $form['#submit'][] = 'ucb2021_profile_form_install_configure_submit';
+function boulderD9_profile_page_form_install_configure_form_alter(&$form, FormStateInterface $form_state) {
+  $form['#submit'][] = 'boulderD9_profile_form_install_configure_submit';
 }
 
 /**
  * Submission handler to sync the contact.form.feedback recipient.
  */
-function ucb2021_profile_form_install_configure_submit($form, FormStateInterface $form_state) {
+function boulderD9_profile_form_install_configure_submit($form, FormStateInterface $form_state) {
   $site_mail = $form_state->getValue('site_mail');
   ContactForm::load('feedback')->setRecipients([$site_mail])->trustData()->save();
 }
@@ -32,7 +32,7 @@ function ucb2021_profile_form_install_configure_submit($form, FormStateInterface
  * Install syslog and uninstall dblog if site is not local
  * Install default content for the site
  */
-function ucb2021_profile_modules_installed( $modules ){
+function boulderD9_profile_modules_installed( $modules ){
   if( in_array('boulderD9_profile', $modules )){
     $installer = \Drupal::service('module_installer');
     // install or uninstall modules once the profile has installed
