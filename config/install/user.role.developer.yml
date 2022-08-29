@@ -3,14 +3,233 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.node.basic_page.default
     - filter.format.full_html
     - filter.format.wysiwyg
+    - media.type.image
+    - media.type.video
+    - node.type.basic_page
+    - node.type.how_to_page
+    - node.type.ucb_article
+    - node.type.ucb_article_list
+    - node.type.ucb_people_list_page
+    - node.type.ucb_person
+    - taxonomy.vocabulary.byline
+    - taxonomy.vocabulary.categories
+    - taxonomy.vocabulary.category
+    - taxonomy.vocabulary.department
+    - taxonomy.vocabulary.tags
+    - taxonomy.vocabulary.ucb_person_job_type
   module:
+    - block
+    - config
+    - consumers
+    - contact
+    - contextual
+    - crop
+    - embed
+    - entity_reference_revisions
+    - externalauth
+    - file
     - filter
+    - layout_builder
+    - layout_builder_modal
+    - media
+    - node
+    - paragraphs
+    - path
+    - pathauto
+    - search
+    - shortcut
+    - system
+    - taxonomy
+    - toolbar
+    - ucb_site_configuration
+    - ucb_user_invite
+    - views_ui
+    - webform
+_core:
+  default_config_hash: A1LlbBpqbwtOygeaA6srbcKRwgt6eZ0qmmqsGx3qG2w
 id: developer
 label: Developer
 weight: 2
 is_admin: null
 permissions:
+  - 'access administration pages'
+  - 'access any webform configuration'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access media overview'
+  - 'access own webform configuration'
+  - 'access shortcuts'
+  - 'access site in maintenance mode'
+  - 'access site reports'
+  - 'access site-wide contact form'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'access webform help'
+  - 'access webform overview'
+  - 'access webform submission user'
+  - 'add consumer entities'
+  - 'administer account settings'
+  - 'administer blocks'
+  - 'administer consumer entities'
+  - 'administer contact forms'
+  - 'administer content types'
+  - 'administer crop'
+  - 'administer crop types'
+  - 'administer embed buttons'
+  - 'administer layout builder modal'
+  - 'administer media'
+  - 'administer media types'
+  - 'administer menu'
+  - 'administer modules'
+  - 'administer nodes'
+  - 'administer paragraphs settings'
+  - 'administer paragraphs types'
+  - 'administer pathauto'
+  - 'administer permissions'
+  - 'administer search'
+  - 'administer shortcuts'
+  - 'administer site configuration'
+  - 'administer software updates'
+  - 'administer taxonomy'
+  - 'administer themes'
+  - 'administer ucb site'
+  - 'administer url aliases'
+  - 'administer user invite'
+  - 'administer users'
+  - 'administer views'
+  - 'administer webform'
+  - 'administer webform element access'
+  - 'administer webform submission'
+  - 'bypass node access'
+  - 'configure all basic_page node layout overrides'
+  - 'configure any layout'
+  - 'configure editable basic_page node layout overrides'
+  - 'create and edit custom blocks'
+  - 'create basic_page content'
+  - 'create how_to_page content'
+  - 'create image media'
+  - 'create media'
+  - 'create terms in byline'
+  - 'create terms in categories'
+  - 'create terms in category'
+  - 'create terms in department'
+  - 'create terms in tags'
+  - 'create terms in ucb_person_job_type'
+  - 'create ucb_article content'
+  - 'create ucb_article_list content'
+  - 'create ucb_people_list_page content'
+  - 'create ucb_person content'
+  - 'create url aliases'
+  - 'create video media'
+  - 'create webform'
+  - 'customize shortcut links'
+  - 'delete all revisions'
+  - 'delete any basic_page content'
+  - 'delete any how_to_page content'
+  - 'delete any image media'
+  - 'delete any media'
+  - 'delete any ucb_article content'
+  - 'delete any ucb_article_list content'
+  - 'delete any ucb_people_list_page content'
+  - 'delete any ucb_person content'
+  - 'delete any video media'
+  - 'delete any webform'
+  - 'delete any webform submission'
+  - 'delete basic_page revisions'
+  - 'delete how_to_page revisions'
+  - 'delete media'
+  - 'delete orphan revisions'
+  - 'delete own basic_page content'
+  - 'delete own consumer entities'
+  - 'delete own how_to_page content'
+  - 'delete own image media'
+  - 'delete own ucb_article content'
+  - 'delete own ucb_article_list content'
+  - 'delete own ucb_people_list_page content'
+  - 'delete own ucb_person content'
+  - 'delete own video media'
+  - 'delete own webform'
+  - 'delete own webform submission'
+  - 'delete terms in byline'
+  - 'delete terms in categories'
+  - 'delete terms in category'
+  - 'delete terms in department'
+  - 'delete terms in tags'
+  - 'delete terms in ucb_person_job_type'
+  - 'delete ucb_article revisions'
+  - 'delete ucb_article_list revisions'
+  - 'delete ucb_people_list_page revisions'
+  - 'delete ucb_person revisions'
+  - 'edit any basic_page content'
+  - 'edit any how_to_page content'
+  - 'edit any image media'
+  - 'edit any ucb_article content'
+  - 'edit any ucb_article_list content'
+  - 'edit any ucb_people_list_page content'
+  - 'edit any ucb_person content'
+  - 'edit any video media'
+  - 'edit any webform'
+  - 'edit any webform submission'
+  - 'edit behavior plugin settings'
+  - 'edit own basic_page content'
+  - 'edit own how_to_page content'
+  - 'edit own image media'
+  - 'edit own ucb_article content'
+  - 'edit own ucb_article_list content'
+  - 'edit own ucb_people_list_page content'
+  - 'edit own ucb_person content'
+  - 'edit own video media'
+  - 'edit own webform'
+  - 'edit own webform submission'
+  - 'edit terms in byline'
+  - 'edit terms in categories'
+  - 'edit terms in category'
+  - 'edit terms in department'
+  - 'edit terms in tags'
+  - 'edit terms in ucb_person_job_type'
+  - 'edit webform assets'
+  - 'edit webform source'
+  - 'edit webform twig'
+  - 'edit webform variants'
+  - 'export configuration'
+  - 'import configuration'
+  - 'invite users'
+  - 'link to any page'
+  - 'revert all revisions'
+  - 'revert basic_page revisions'
+  - 'revert how_to_page revisions'
+  - 'revert ucb_article revisions'
+  - 'revert ucb_article_list revisions'
+  - 'revert ucb_people_list_page revisions'
+  - 'revert ucb_person revisions'
+  - 'search content'
+  - 'switch shortcut sets'
+  - 'synchronize configuration'
+  - 'update any media'
+  - 'update media'
+  - 'update own consumer entities'
+  - 'use advanced search'
   - 'use text format full_html'
   - 'use text format wysiwyg'
+  - 'view all media revisions'
+  - 'view all revisions'
+  - 'view any webform submission'
+  - 'view authmap'
+  - 'view basic_page revisions'
+  - 'view how_to_page revisions'
+  - 'view own consumer entities'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view own webform submission'
+  - 'view the administration theme'
+  - 'view ucb_article revisions'
+  - 'view ucb_article_list revisions'
+  - 'view ucb_people_list_page revisions'
+  - 'view ucb_person revisions'
+  - 'view unpublished paragraphs'
+  - 'view user email addresses'
