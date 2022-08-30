@@ -1,5 +1,5 @@
 _core:
-  default_config_hash: RMy8ch2MOT68bCD63OGZQRdMk2pD6UXPEZMuCIisbfs
+  default_config_hash: sLG6vT7rVibgeNTycwVG90Jw1lIBZYrnT7FVfnS7qtU
 langcode: en
 activate: true
 auth_source: cu_boulder
@@ -15,7 +15,7 @@ role:
 register_users: true
 allow:
   set_drupal_pwd: false
-  default_login: true
+  default_login: false
   default_login_roles: {  }
   default_login_users: '1'
 logout_goto_url: ''
