@@ -51,7 +51,6 @@ dependencies:
     - toolbar
     - ucb_site_configuration
     - ucb_user_invite
-    - update
     - views_ui
     - webform
 _core:
@@ -63,7 +62,6 @@ is_admin: null
 permissions:
   - 'access administration pages'
   - 'access any webform configuration'
-  - 'access comments'
   - 'access content'
   - 'access content overview'
   - 'access contextual links'
@@ -76,6 +74,7 @@ permissions:
   - 'access site-wide contact form'
   - 'access taxonomy overview'
   - 'access toolbar'
+  - 'access user contact forms'
   - 'access user profiles'
   - 'access webform help'
   - 'access webform overview'
@@ -89,8 +88,6 @@ permissions:
   - 'administer comment display'
   - 'administer comment fields'
   - 'administer comment form display'
-  - 'administer comment types'
-  - 'administer comments'
   - 'administer consumer entities'
   - 'administer contact forms'
   - 'administer contact_message display'
@@ -144,8 +141,6 @@ permissions:
   - 'administer webform element access'
   - 'administer webform submission'
   - 'bypass node access'
-  - 'cancel account'
-  - 'change own username'
   - 'change saml authentication setting'
   - 'configure all basic_page node layout overrides'
   - 'configure any layout'
@@ -219,7 +214,6 @@ permissions:
   - 'edit any webform submission'
   - 'edit behavior plugin settings'
   - 'edit own basic_page content'
-  - 'edit own comments'
   - 'edit own how_to_page content'
   - 'edit own image media'
   - 'edit own ucb_article content'
@@ -244,7 +238,6 @@ permissions:
   - 'invite users'
   - 'link to any page'
   - 'notify of path changes'
-  - 'post comments'
   - 'revert all revisions'
   - 'revert basic_page revisions'
   - 'revert how_to_page revisions'
@@ -253,8 +246,6 @@ permissions:
   - 'revert ucb_people_list_page revisions'
   - 'revert ucb_person revisions'
   - 'search content'
-  - 'select account cancellation method'
-  - 'skip comment approval'
   - 'switch shortcut sets'
   - 'synchronize configuration'
   - 'update any media'
@@ -280,5 +271,4 @@ permissions:
   - 'view ucb_people_list_page revisions'
   - 'view ucb_person revisions'
   - 'view unpublished paragraphs'
-  - 'view update notifications'
   - 'view user email addresses'
