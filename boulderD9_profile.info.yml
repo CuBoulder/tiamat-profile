@@ -64,6 +64,7 @@ install:
   - ucb_site_configuration
   - ucb_user_invite
   - ucb_focal_image_enable
+  - ucb_bootstrap_layouts
   
 # Required modules
 # Note that any dependencies of the modules listed here will be installed automatically.
