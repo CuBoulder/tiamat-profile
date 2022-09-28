@@ -7,7 +7,7 @@ dependencies:
   module:
     - ckeditor5
 _core:
-  default_config_hash: 8bGnkhf7rIkFCCN5oYNlKiVWy18ggAr7elf15zKdRJQ
+  default_config_hash: '--vgnLnNuLQRo14mW9U1kYpjPS3DpxGW2GEEZizuLOY'
 format: full_html
 editor: ckeditor5
 settings:
@@ -43,5 +43,5 @@ settings:
       reversed: true
       startIndex: true
     media_media:
-      allow_view_mode_override: false
+      allow_view_mode_override: true
 image_upload: {  }
