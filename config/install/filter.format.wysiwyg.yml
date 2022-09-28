@@ -3,11 +3,15 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.focal_image_square
+    - core.entity_view_mode.media.focal_image_wide
     - core.entity_view_mode.media.media_library
   module:
     - editor
     - entity_embed
     - media
+_core:
+  default_config_hash: bgG4OfbtWZnI3ArWilQSmp5tvWfZhn9f-rjRwMntZeY
 name: WYSIWYG
 format: wysiwyg
 weight: 0
@@ -18,7 +22,7 @@ filters:
     status: true
     weight: -50
     settings:
-      allowed_html: '<br> <p class="text-align-left text-align-center text-align-right text-align-justify"> <h2 class="text-align-left text-align-center text-align-right text-align-justify"> <h3 class="text-align-left text-align-center text-align-right text-align-justify"> <h4 class="text-align-left text-align-center text-align-right text-align-justify"> <h5 class="text-align-left text-align-center text-align-right text-align-justify"> <h6 class="text-align-left text-align-center text-align-right text-align-justify"> <strong> <em> <sub> <sup> <blockquote> <a href> <ul> <ol reversed start> <li> <hr> <table> <tr> <td rowspan colspan> <th rowspan colspan> <thead> <tbody> <tfoot> <caption> <drupal-media data-entity-type data-entity-uuid alt data-align>'
+      allowed_html: '<br> <p class="text-align-left text-align-center text-align-right text-align-justify"> <h2 class="text-align-left text-align-center text-align-right text-align-justify"> <h3 class="text-align-left text-align-center text-align-right text-align-justify"> <h4 class="text-align-left text-align-center text-align-right text-align-justify"> <h5 class="text-align-left text-align-center text-align-right text-align-justify"> <h6 class="text-align-left text-align-center text-align-right text-align-justify"> <strong> <em> <sub> <sup> <blockquote> <a href> <ul> <ol reversed start> <li> <hr> <table> <tr> <td rowspan colspan> <th rowspan colspan> <thead> <tbody> <tfoot> <caption> <drupal-media data-entity-type data-entity-uuid alt data-view-mode data-align>'
       filter_html_help: true
       filter_html_nofollow: true
   filter_url:
@@ -36,6 +40,8 @@ filters:
     settings:
       default_view_mode: media_library
       allowed_view_modes:
+        focal_image_square: focal_image_square
+        focal_image_wide: focal_image_wide
         media_library: media_library
       allowed_media_types:
         image: image
@@ -85,6 +91,6 @@ filters:
   filter_html_image_secure:
     id: filter_html_image_secure
     provider: filter
-    status: false
+    status: true
     weight: -44
     settings: {  }
