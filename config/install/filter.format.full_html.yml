@@ -3,11 +3,15 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.focal_image_square
+    - core.entity_view_mode.media.focal_image_wide
     - core.entity_view_mode.media.media_library
   module:
     - editor
     - entity_embed
     - media
+_core:
+  default_config_hash: Zv4o1oO7Ke2OBOo1r9UAgoodThRjMUJN80_z8fHZkHY
 name: 'Full HTML'
 format: full_html
 weight: 1
@@ -36,6 +40,8 @@ filters:
     settings:
       default_view_mode: media_library
       allowed_view_modes:
+        focal_image_square: focal_image_square
+        focal_image_wide: focal_image_wide
         media_library: media_library
       allowed_media_types:
         image: image
