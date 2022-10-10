@@ -60,6 +60,8 @@ install:
   - externalauth
   - config_update
   - features
+  - pantheon_advanced_page_cache
+  - simple_sitemap
   - cu_boulder_content_types
   - ucb_site_configuration
   - ucb_user_invite
