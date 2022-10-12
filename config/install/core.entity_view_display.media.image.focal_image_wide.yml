@@ -10,7 +10,6 @@ dependencies:
   module:
     - image
     - layout_builder
-    - text
 third_party_settings:
   layout_builder:
     enabled: false
@@ -31,15 +30,9 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  field_media_image_caption:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 1
-    region: content
 hidden:
   created: true
+  field_media_image_caption: true
   name: true
   thumbnail: true
   uid: true
