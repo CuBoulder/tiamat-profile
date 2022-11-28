@@ -7,7 +7,7 @@ dependencies:
   module:
     - ckeditor5
 _core:
-  default_config_hash: DguSRLUuoVW4y8oSvNjFlCMk-z1JMRqbUeWxgdoNOAQ
+  default_config_hash: wdHdLeMerwpZ1bNQ6TMbz7GJJxeQKX2RcKuORXLlyxY
 format: wysiwyg
 editor: ckeditor5
 settings:
@@ -56,4 +56,11 @@ settings:
         - justify
     media_media:
       allow_view_mode_override: true
-image_upload: {  }
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

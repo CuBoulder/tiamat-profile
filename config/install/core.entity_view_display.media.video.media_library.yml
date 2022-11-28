@@ -1,3 +1,4 @@
+uuid: 5d0e6c06-1069-4d59-bc77-fb7da4bec9f8
 langcode: en
 status: true
 dependencies:
@@ -13,6 +14,8 @@ third_party_settings:
   layout_builder:
     enabled: false
     allow_custom: false
+_core:
+  default_config_hash: tFStonYdaaMneR1HGBE67dTHp0_CdeLL5IkA-FLpilQ
 id: media.video.media_library
 targetEntityType: media
 bundle: video

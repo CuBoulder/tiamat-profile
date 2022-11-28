@@ -3,19 +3,27 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.editor_embed_image
     - core.entity_view_mode.media.focal_image_square
     - core.entity_view_mode.media.focal_image_wide
+    - core.entity_view_mode.media.full
     - core.entity_view_mode.media.media_library
   module:
     - editor
     - entity_embed
     - media
 _core:
-  default_config_hash: bgG4OfbtWZnI3ArWilQSmp5tvWfZhn9f-rjRwMntZeY
+  default_config_hash: n_FX631n_pn_fPufpXJruzK9694krycKDOkYryeHOj4
 name: WYSIWYG
 format: wysiwyg
 weight: 0
 filters:
+  entity_embed:
+    id: entity_embed
+    provider: entity_embed
+    status: true
+    weight: -41
+    settings: {  }
   filter_html:
     id: filter_html
     provider: filter
@@ -38,10 +46,13 @@ filters:
     status: true
     weight: -40
     settings:
-      default_view_mode: media_library
+      default_view_mode: default
       allowed_view_modes:
+        default: default
+        editor_embed_image: editor_embed_image
         focal_image_square: focal_image_square
         focal_image_wide: focal_image_wide
+        full: full
         media_library: media_library
       allowed_media_types:
         image: image
@@ -63,12 +74,6 @@ filters:
     provider: filter
     status: true
     weight: -43
-    settings: {  }
-  entity_embed:
-    id: entity_embed
-    provider: entity_embed
-    status: true
-    weight: -41
     settings: {  }
   editor_file_reference:
     id: editor_file_reference

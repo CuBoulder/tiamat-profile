@@ -1,0 +1,12 @@
+uuid: 13421240-1ced-4b08-a921-2a638c775b53
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: hhD27CyqD9W7s1CbwiiHiZ-1AY5hcBiypb4XD91ffgs
+id: media.editor_embed_image
+label: 'Editor Embed Image'
+targetEntityType: media
+cache: true
