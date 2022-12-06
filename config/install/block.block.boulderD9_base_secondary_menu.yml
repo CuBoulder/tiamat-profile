@@ -2,20 +2,20 @@ langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.footer
+    - system.menu.secondary
   module:
     - system
   theme:
     - boulderD9_base
-id: boulderD9_base_footer_menu
+id: boulderD9_base_secondary_menu
 theme: boulderD9_base
-region: footer_menu
+region: secondary_menu
 weight: 0
 provider: null
-plugin: 'system_menu_block:footer'
+plugin: 'system_menu_block:secondary'
 settings:
-  id: 'system_menu_block:footer'
-  label: 'Footer'
+  id: 'system_menu_block:secondary'
+  label: 'Secondary navigation'
   label_display: '0'
   provider: system
   level: 1

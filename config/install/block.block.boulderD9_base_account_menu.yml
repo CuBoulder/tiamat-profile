@@ -10,7 +10,7 @@ dependencies:
 id: boulderD9_base_account_menu
 theme: boulderD9_base
 region: secondary_menu
-weight: 0
+weight: 1
 provider: null
 plugin: 'system_menu_block:account'
 settings:
