@@ -2,6 +2,6 @@ langcode: en
 status: true
 dependencies: {  }
 id: secondary
-label: 'Secondary navigation'
-description: ''
+label: 'Secondary menu'
+description: 'Provides a space on a site that can be populated with useful secondary or action links.'
 locked: false
