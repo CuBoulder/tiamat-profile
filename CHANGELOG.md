@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Limits images to a maximum of 2 MB in size
+  Resolves CuBoulder/tiamat-theme#148
+---
+
 - ### Additions to user roles
   - Creates the Architect, Configuration Manager, and Layout Manager user roles
   - Updates existing user roles to include newer content types and terms
