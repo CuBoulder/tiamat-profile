@@ -1,4 +1,4 @@
-uuid: 3f146f48-9d8e-4e07-b36b-c83f899b4865
+uuid: cf04d68a-71eb-4ffc-987e-580529055686
 langcode: en
 status: true
 dependencies:
@@ -26,6 +26,8 @@ dependencies:
     - taxonomy.vocabulary.tags
     - taxonomy.vocabulary.ucb_person_job_type
   module:
+    - aggregator
+    - block
     - contact
     - contextual
     - entity_reference_revisions
@@ -44,10 +46,8 @@ dependencies:
     - ucb_site_configuration
     - ucb_user_invite
     - webform
-_core:
-  default_config_hash: cBxXbBua6euLkcjo0F_tti12BQfqYQEDbApPPzhhcHc
-id: site_owner
-label: 'Site Owner'
+id: architect
+label: Architect
 weight: 3
 is_admin: null
 permissions:
@@ -57,6 +57,7 @@ permissions:
   - 'access contextual links'
   - 'access files overview'
   - 'access media overview'
+  - 'access news feeds'
   - 'access shortcuts'
   - 'access site reports'
   - 'access site-wide contact form'
@@ -66,12 +67,17 @@ permissions:
   - 'access webform help'
   - 'access webform overview'
   - 'access webform submission user'
+  - 'administer blocks'
   - 'administer contact forms'
   - 'administer content types'
   - 'administer menu'
+  - 'administer news feeds'
   - 'administer nodes'
+  - 'administer search'
   - 'administer ucb external services'
   - 'administer ucb site'
+  - 'administer user invite'
+  - 'administer users'
   - 'administer webform element access'
   - 'bypass node access'
   - 'configure all basic_page node layout overrides'
@@ -182,6 +188,7 @@ permissions:
   - 'edit terms in ucb_person_job_type'
   - 'edit ucb site appearance'
   - 'edit ucb site contact info'
+  - 'edit ucb site general'
   - 'invite users'
   - 'link to any page'
   - 'revert all revisions'
@@ -197,6 +204,7 @@ permissions:
   - 'switch shortcut sets'
   - 'update any media'
   - 'update media'
+  - 'use advanced search'
   - 'use text format wysiwyg'
   - 'view all media revisions'
   - 'view all revisions'
