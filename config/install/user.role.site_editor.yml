@@ -8,7 +8,9 @@ dependencies:
     - media.type.image
     - media.type.video
     - node.type.basic_page
+    - node.type.form_page
     - node.type.how_to_page
+    - node.type.newsletter
     - node.type.ucb_article
     - node.type.ucb_article_list
     - node.type.ucb_people_list_page
@@ -17,6 +19,10 @@ dependencies:
     - taxonomy.vocabulary.categories
     - taxonomy.vocabulary.category
     - taxonomy.vocabulary.department
+    - taxonomy.vocabulary.filter_1
+    - taxonomy.vocabulary.filter_2
+    - taxonomy.vocabulary.filter_3
+    - taxonomy.vocabulary.newsletter
     - taxonomy.vocabulary.tags
     - taxonomy.vocabulary.ucb_person_job_type
   module:
@@ -36,7 +42,7 @@ dependencies:
     - toolbar
     - webform
 _core:
-  default_config_hash: WKYmhgKWEElZz8f-qDN1hkE-nbQaEND_MMTKZbg7As8
+  default_config_hash: q5-PjJKPNnbrdHZstlPA_TPk-HDZTksBXEAE-5Jo2KE
 id: site_editor
 label: 'Site Editor'
 weight: 4
@@ -61,13 +67,19 @@ permissions:
   - 'configure editable basic_page node layout overrides'
   - 'create and edit custom blocks'
   - 'create basic_page content'
+  - 'create form_page content'
   - 'create how_to_page content'
   - 'create image media'
   - 'create media'
+  - 'create newsletter content'
   - 'create terms in byline'
   - 'create terms in categories'
   - 'create terms in category'
   - 'create terms in department'
+  - 'create terms in filter_1'
+  - 'create terms in filter_2'
+  - 'create terms in filter_3'
+  - 'create terms in newsletter'
   - 'create terms in tags'
   - 'create terms in ucb_person_job_type'
   - 'create ucb_article content'
@@ -80,21 +92,27 @@ permissions:
   - 'customize shortcut links'
   - 'delete all revisions'
   - 'delete any basic_page content'
+  - 'delete any form_page content'
   - 'delete any how_to_page content'
   - 'delete any image media'
   - 'delete any media'
+  - 'delete any newsletter content'
   - 'delete any ucb_article content'
   - 'delete any ucb_article_list content'
   - 'delete any ucb_people_list_page content'
   - 'delete any ucb_person content'
   - 'delete any video media'
   - 'delete basic_page revisions'
+  - 'delete form_page revisions'
   - 'delete how_to_page revisions'
   - 'delete media'
+  - 'delete newsletter revisions'
   - 'delete orphan revisions'
   - 'delete own basic_page content'
+  - 'delete own form_page content'
   - 'delete own how_to_page content'
   - 'delete own image media'
+  - 'delete own newsletter content'
   - 'delete own ucb_article content'
   - 'delete own ucb_article_list content'
   - 'delete own ucb_people_list_page content'
@@ -106,6 +124,10 @@ permissions:
   - 'delete terms in categories'
   - 'delete terms in category'
   - 'delete terms in department'
+  - 'delete terms in filter_1'
+  - 'delete terms in filter_2'
+  - 'delete terms in filter_3'
+  - 'delete terms in newsletter'
   - 'delete terms in tags'
   - 'delete terms in ucb_person_job_type'
   - 'delete ucb_article revisions'
@@ -113,16 +135,20 @@ permissions:
   - 'delete ucb_people_list_page revisions'
   - 'delete ucb_person revisions'
   - 'edit any basic_page content'
+  - 'edit any form_page content'
   - 'edit any how_to_page content'
   - 'edit any image media'
+  - 'edit any newsletter content'
   - 'edit any ucb_article content'
   - 'edit any ucb_article_list content'
   - 'edit any ucb_people_list_page content'
   - 'edit any ucb_person content'
   - 'edit any video media'
   - 'edit own basic_page content'
+  - 'edit own form_page content'
   - 'edit own how_to_page content'
   - 'edit own image media'
+  - 'edit own newsletter content'
   - 'edit own ucb_article content'
   - 'edit own ucb_article_list content'
   - 'edit own ucb_people_list_page content'
@@ -134,12 +160,18 @@ permissions:
   - 'edit terms in categories'
   - 'edit terms in category'
   - 'edit terms in department'
+  - 'edit terms in filter_1'
+  - 'edit terms in filter_2'
+  - 'edit terms in filter_3'
+  - 'edit terms in newsletter'
   - 'edit terms in tags'
   - 'edit terms in ucb_person_job_type'
   - 'link to any page'
   - 'revert all revisions'
   - 'revert basic_page revisions'
+  - 'revert form_page revisions'
   - 'revert how_to_page revisions'
+  - 'revert newsletter revisions'
   - 'revert ucb_article revisions'
   - 'revert ucb_article_list revisions'
   - 'revert ucb_people_list_page revisions'
@@ -152,7 +184,9 @@ permissions:
   - 'view all media revisions'
   - 'view all revisions'
   - 'view basic_page revisions'
+  - 'view form_page revisions'
   - 'view how_to_page revisions'
+  - 'view newsletter revisions'
   - 'view own unpublished content'
   - 'view own unpublished media'
   - 'view own webform submission'
