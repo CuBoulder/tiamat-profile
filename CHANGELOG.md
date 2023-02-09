@@ -9,6 +9,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Adds Document and Audio Media types
+  This update adds two new Media types to be used with the Media Library.
+  
+  Document supports:
+  - PDF
+  - DOC
+  - DOCX
+  - TXT
+  - RTF
+  
+  Audio supports:
+  - MP3
+  - WAV
+  - AAC
+  
+  Resolves CuBoulder/tiamat-theme#233; Author @TeddyBearX 
+---
+
 - ### Limits images to a maximum of 2 MB in size
   Resolves CuBoulder/tiamat-theme#148
 ---

@@ -1,0 +1,13 @@
+uuid: c01b7914-ad9b-4a53-a4a8-904e1a09fb9b
+langcode: en
+status: true
+dependencies: {  }
+id: audio
+label: Audio
+description: 'An audio file of a format such as MP3 or WAV.'
+source: audio_file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_audio_file
+field_map: {  }

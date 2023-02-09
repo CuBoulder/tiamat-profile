@@ -1,0 +1,14 @@
+uuid: 89ad5436-ec7e-424f-89f3-0c36dca72dda
+langcode: en
+status: true
+dependencies: {  }
+id: document
+label: Document
+description: 'A document of a format such as PDF or DOC.'
+source: file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_document_file
+field_map:
+  name: name
