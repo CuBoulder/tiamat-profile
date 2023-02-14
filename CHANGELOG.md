@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Fixes not being able to modify image focal point settings
+  The form display of the Image media entity was updated.
+  
+  Resolves CuBoulder/tiamat-theme#234; Author @TeddyBearX
+---
+
 ## [20230209] - 2023-02-09
 
 -   ### Adds Document and Audio Media types
