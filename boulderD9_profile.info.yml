@@ -42,6 +42,7 @@ install:
   - webform_ui
   - admin_toolbar
   - admin_toolbar_tools
+  - admin_toolbar_links_access_filter
   - gin_toolbar
   - media
   - media_library
