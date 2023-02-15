@@ -65,10 +65,10 @@ install:
   - pantheon_advanced_page_cache
   - simple_sitemap
   - cu_boulder_content_types
+  - ucb_admin_menus
   - ucb_site_configuration
   - ucb_campus_news
   - ucb_user_invite
-  - ucb_admin_menus
   - ucb_focal_image_enable
   - ucb_bootstrap_layouts
   - media_library_form_element
