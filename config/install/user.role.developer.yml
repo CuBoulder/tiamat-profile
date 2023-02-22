@@ -10,6 +10,7 @@ dependencies:
     - media.type.video
     - node.type.basic_page
     - node.type.form_page
+    - node.type.how_to_page
     - node.type.newsletter
     - node.type.ucb_article
     - node.type.ucb_article_list
@@ -158,6 +159,7 @@ permissions:
   - 'create and edit custom blocks'
   - 'create basic_page content'
   - 'create form_page content'
+  - 'create how_to_page content'
   - 'create image media'
   - 'create media'
   - 'create newsletter content'
@@ -184,6 +186,7 @@ permissions:
   - 'delete all revisions'
   - 'delete any basic_page content'
   - 'delete any form_page content'
+  - 'delete any how_to_page content'
   - 'delete any image media'
   - 'delete any media'
   - 'delete any newsletter content'
@@ -205,6 +208,7 @@ permissions:
   - 'delete own basic_page content'
   - 'delete own consumer entities'
   - 'delete own form_page content'
+  - 'delete own how_to_page content'
   - 'delete own image media'
   - 'delete own newsletter content'
   - 'delete own ucb_article content'
@@ -234,6 +238,7 @@ permissions:
   - 'delete ucb_person revisions'
   - 'edit any basic_page content'
   - 'edit any form_page content'
+  - 'edit any how_to_page content'
   - 'edit any image media'
   - 'edit any newsletter content'
   - 'edit any ucb_article content'
@@ -248,6 +253,7 @@ permissions:
   - 'edit behavior plugin settings'
   - 'edit own basic_page content'
   - 'edit own form_page content'
+  - 'edit own how_to_page content'
   - 'edit own image media'
   - 'edit own newsletter content'
   - 'edit own ucb_article content'
@@ -284,6 +290,7 @@ permissions:
   - 'revert all revisions'
   - 'revert basic_page revisions'
   - 'revert form_page revisions'
+  - 'revert how_to_page revisions'
   - 'revert newsletter revisions'
   - 'revert ucb_article revisions'
   - 'revert ucb_article_list revisions'
@@ -306,6 +313,7 @@ permissions:
   - 'view authmap'
   - 'view basic_page revisions'
   - 'view form_page revisions'
+  - 'view how_to_page revisions'
   - 'view media'
   - 'view newsletter revisions'
   - 'view own consumer entities'
