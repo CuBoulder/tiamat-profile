@@ -9,6 +9,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Hides administration items that a user doesn't have access to
+  This update includes these changes across several repos:
+  - Hides inaccessible items from the Admin Toolbar by installing Admin Toolbar Links Access Filter
+  - Hides inaccessible items from "Add content" and "CU Boulder site settings"
+  
+  CuBoulder/tiamat-theme#240; Author @TeddyBearX
+  
+  This update to `tiamat-profile` also:
+  - Hides the "How-To" content type for users with the "Site editor", "Site owner", or "Architect" role (Resolves CuBoulder/tiamat-theme#221)
+  - Allows users with the "Site editor", "Site owner", "Architect", or "Developer" role to access the "Issue" and "Issue Archive" content types
+  - Resolves an issue where users with the "Site editor" role were unable to add content to menus by granting them the "Administer menus and menu links" permission
+  
+  Sister PR in: [ucb_admin_menus](https://github.com/CuBoulder/ucb_admin_menus/pull/6), [ucb_site_configuration](https://github.com/CuBoulder/ucb_site_configuration/pull/18)
+---
+
 - ### Fixes not being able to modify image focal point settings
   The form display of the Image media entity was updated.
   

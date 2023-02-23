@@ -14,6 +14,8 @@ dependencies:
     - node.type.newsletter
     - node.type.ucb_article
     - node.type.ucb_article_list
+    - node.type.ucb_issue
+    - node.type.ucb_issue_archive
     - node.type.ucb_people_list_page
     - node.type.ucb_person
     - taxonomy.vocabulary.byline
@@ -60,8 +62,6 @@ dependencies:
     - ucb_user_invite
     - views_ui
     - webform
-_core:
-  default_config_hash: qJIZmTWrohZxL0OUuS2dOHFNVsK6D0Ao1asr4_Yej8I
 id: developer
 label: Developer
 weight: 2
@@ -175,6 +175,8 @@ permissions:
   - 'create terms in ucb_person_job_type'
   - 'create ucb_article content'
   - 'create ucb_article_list content'
+  - 'create ucb_issue content'
+  - 'create ucb_issue_archive content'
   - 'create ucb_people_list_page content'
   - 'create ucb_person content'
   - 'create url aliases'
@@ -190,6 +192,8 @@ permissions:
   - 'delete any newsletter content'
   - 'delete any ucb_article content'
   - 'delete any ucb_article_list content'
+  - 'delete any ucb_issue content'
+  - 'delete any ucb_issue_archive content'
   - 'delete any ucb_people_list_page content'
   - 'delete any ucb_person content'
   - 'delete any video media'
@@ -198,7 +202,6 @@ permissions:
   - 'delete authmap'
   - 'delete basic_page revisions'
   - 'delete form_page revisions'
-  - 'delete how_to_page revisions'
   - 'delete media'
   - 'delete newsletter revisions'
   - 'delete orphan revisions'
@@ -210,6 +213,8 @@ permissions:
   - 'delete own newsletter content'
   - 'delete own ucb_article content'
   - 'delete own ucb_article_list content'
+  - 'delete own ucb_issue content'
+  - 'delete own ucb_issue_archive content'
   - 'delete own ucb_people_list_page content'
   - 'delete own ucb_person content'
   - 'delete own video media'
@@ -227,6 +232,8 @@ permissions:
   - 'delete terms in ucb_person_job_type'
   - 'delete ucb_article revisions'
   - 'delete ucb_article_list revisions'
+  - 'delete ucb_issue revisions'
+  - 'delete ucb_issue_archive revisions'
   - 'delete ucb_people_list_page revisions'
   - 'delete ucb_person revisions'
   - 'edit any basic_page content'
@@ -236,6 +243,8 @@ permissions:
   - 'edit any newsletter content'
   - 'edit any ucb_article content'
   - 'edit any ucb_article_list content'
+  - 'edit any ucb_issue content'
+  - 'edit any ucb_issue_archive content'
   - 'edit any ucb_people_list_page content'
   - 'edit any ucb_person content'
   - 'edit any video media'
@@ -249,6 +258,8 @@ permissions:
   - 'edit own newsletter content'
   - 'edit own ucb_article content'
   - 'edit own ucb_article_list content'
+  - 'edit own ucb_issue content'
+  - 'edit own ucb_issue_archive content'
   - 'edit own ucb_people_list_page content'
   - 'edit own ucb_person content'
   - 'edit own video media'
@@ -283,6 +294,8 @@ permissions:
   - 'revert newsletter revisions'
   - 'revert ucb_article revisions'
   - 'revert ucb_article_list revisions'
+  - 'revert ucb_issue revisions'
+  - 'revert ucb_issue_archive revisions'
   - 'revert ucb_people_list_page revisions'
   - 'revert ucb_person revisions'
   - 'search content'
@@ -310,6 +323,8 @@ permissions:
   - 'view the administration theme'
   - 'view ucb_article revisions'
   - 'view ucb_article_list revisions'
+  - 'view ucb_issue revisions'
+  - 'view ucb_issue_archive revisions'
   - 'view ucb_people_list_page revisions'
   - 'view ucb_person revisions'
   - 'view unpublished paragraphs'
