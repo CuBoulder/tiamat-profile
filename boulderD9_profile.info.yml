@@ -38,6 +38,7 @@ install:
   - views_ui
   - editor
   - ckeditor5
+  - ucb_ckeditor5_tooltip
   - webform
   - webform_ui
   - admin_toolbar
