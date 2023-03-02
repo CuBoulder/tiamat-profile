@@ -275,6 +275,7 @@ permissions:
   - 'edit terms in newsletter'
   - 'edit terms in tags'
   - 'edit terms in ucb_person_job_type'
+  - 'edit ucb site advanced'
   - 'edit ucb site appearance'
   - 'edit ucb site contact info'
   - 'edit ucb site general'
