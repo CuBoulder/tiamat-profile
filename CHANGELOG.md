@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### issue/198 Add Tooltip to wysiwyg
+  Profile updates for wysiwyg
+  First PR contains the Tooltip plugin
+---
+
 - ### Adds "Advanced" appearance settings and custom site logos
   This update:
   - Adds an _Advanced_ view at the bottom of the _Appearance_ settings, collapsed by default and visible only to those with the _Edit advanced site settings_ permission.
