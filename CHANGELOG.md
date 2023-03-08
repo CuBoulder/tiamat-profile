@@ -9,44 +9,56 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- ### issue/198 Add Tooltip to wysiwyg
-  Profile updates for wysiwyg
-  First PR contains the Tooltip plugin
----
+## [20230307] - 2023-03-08
 
-- ### Adds "Advanced" appearance settings and custom site logos
-  This update:
-  - Adds an _Advanced_ view at the bottom of the _Appearance_ settings, collapsed by default and visible only to those with the _Edit advanced site settings_ permission.
-  - Moves all theme settings previously restricted to Drupal's default theme settings into the _Advanced_ view.
-  - Adds site-specific custom logos (CuBoulder/tiamat-theme#264) and places the settings for custom logos into the _Advanced_ view:
-    - Custom logo requires _white text on dark header_ and _dark text on white header_ variants.
-    - An image can be uploaded or a path can be manually specified for each.
-    - ~~A scale can be specified, which defaults to _2x_ (Retina) but also allows _1x_ (standard) or _3x_ (enhanced Retina)~~.
-  - Assigns the _Architect_ and _Developer_ user roles the _Edit advanced site settings_ permission.
-  
-  Sister PR in: [ucb_site_configuration](https://github.com/CuBoulder/ucb_site_configuration/pull/19), [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/270)
----
+-   ### issue/198 Add Tooltip to wysiwyg
+    Profile updates for wysiwyg
+    First PR contains the Tooltip plugin
 
-- ### Hides administration items that a user doesn't have access to
-  This update includes these changes across several repos:
-  - Hides inaccessible items from the Admin Toolbar by installing Admin Toolbar Links Access Filter
-  - Hides inaccessible items from "Add content" and "CU Boulder site settings"
-  
-  CuBoulder/tiamat-theme#240; Author @TeddyBearX
-  
-  This update to `tiamat-profile` also:
-  - Hides the "How-To" content type for users with the "Site editor", "Site owner", or "Architect" role (Resolves CuBoulder/tiamat-theme#221)
-  - Allows users with the "Site editor", "Site owner", "Architect", or "Developer" role to access the "Issue" and "Issue Archive" content types
-  - Resolves an issue where users with the "Site editor" role were unable to add content to menus by granting them the "Administer menus and menu links" permission
-  
-  Sister PR in: [ucb_admin_menus](https://github.com/CuBoulder/ucb_admin_menus/pull/6), [ucb_site_configuration](https://github.com/CuBoulder/ucb_site_configuration/pull/18)
----
+* * *
 
-- ### Fixes not being able to modify image focal point settings
-  The form display of the Image media entity was updated.
-  
-  Resolves CuBoulder/tiamat-theme#234; Author @TeddyBearX
----
+-   ### Adds "Advanced" appearance settings and custom site logos
+
+    This update:
+
+    -   Adds an _Advanced_ view at the bottom of the _Appearance_ settings, collapsed by default and visible only to those with the _Edit advanced site settings_ permission.
+    -   Moves all theme settings previously restricted to Drupal's default theme settings into the _Advanced_ view.
+    -   Adds site-specific custom logos (CuBoulder/tiamat-theme#264) and places the settings for custom logos into the _Advanced_ view:
+        -   Custom logo requires _white text on dark header_ and _dark text on white header_ variants.
+        -   An image can be uploaded or a path can be manually specified for each.
+        -   ~~A scale can be specified, which defaults to _2x_ (Retina) but also allows _1x_ (standard) or _3x_ (enhanced Retina)~~.
+    -   Assigns the _Architect_ and _Developer_ user roles the _Edit advanced site settings_ permission.
+
+    Sister PR in: [ucb_site_configuration](https://github.com/CuBoulder/ucb_site_configuration/pull/19), [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/270)
+
+* * *
+
+-   ### Hides administration items that a user doesn't have access to
+
+    This update includes these changes across several repos:
+
+    -   Hides inaccessible items from the Admin Toolbar by installing Admin Toolbar Links Access Filter
+    -   Hides inaccessible items from "Add content" and "CU Boulder site settings"
+
+    CuBoulder/tiamat-theme#240; Author @TeddyBearX
+
+    This update to `tiamat-profile` also:
+
+    -   Hides the "How-To" content type for users with the "Site editor", "Site owner", or "Architect" role (Resolves CuBoulder/tiamat-theme#221)
+    -   Allows users with the "Site editor", "Site owner", "Architect", or "Developer" role to access the "Issue" and "Issue Archive" content types
+    -   Resolves an issue where users with the "Site editor" role were unable to add content to menus by granting them the "Administer menus and menu links" permission
+
+    Sister PR in: [ucb_admin_menus](https://github.com/CuBoulder/ucb_admin_menus/pull/6), [ucb_site_configuration](https://github.com/CuBoulder/ucb_site_configuration/pull/18)
+
+* * *
+
+-   ### Fixes not being able to modify image focal point settings
+
+    The form display of the Image media entity was updated.
+
+    Resolves CuBoulder/tiamat-theme#234; Author @TeddyBearX
+
+* * *
 
 ## [20230209] - 2023-02-09
 
@@ -86,6 +98,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * * *
 
-[Unreleased]: https://github.com/CuBoulder/tiamat-profile/compare/20230209...HEAD
+[Unreleased]: https://github.com/CuBoulder/tiamat-profile/compare/20230307...HEAD
+
+[20230307]: https://github.com/CuBoulder/tiamat-profile/compare/20230209...20230307
 
 [20230209]: https://github.com/CuBoulder/tiamat-profile/compare/fa689b3f0b5ed84b046b809d6ea06d2b874ffaf1...20230209
