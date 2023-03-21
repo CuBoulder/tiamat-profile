@@ -1,0 +1,10 @@
+uuid: b08f5d74-5f9a-4c9e-a22d-5d8bf9e385cb
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.small_square_image_style
+label: 'Small Square'
+targetEntityType: media
+cache: true
