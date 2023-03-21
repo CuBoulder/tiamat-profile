@@ -1,0 +1,10 @@
+uuid: 253118a8-bf21-4bb1-a4fa-263912350d66
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.square_thumbnail
+label: 'Square Thumbnail'
+targetEntityType: media
+cache: true
