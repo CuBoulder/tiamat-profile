@@ -1,0 +1,15 @@
+uuid: 09e6386a-25dd-4c6a-9d71-3e9b75b6bbfa
+langcode: en
+status: true
+dependencies: {  }
+name: small_square_image_style
+label: 'Small Square (500 x 500, 25% display size)'
+effects:
+  0804ead2-325d-4756-844f-0c9d1b0d3c79:
+    uuid: 0804ead2-325d-4756-844f-0c9d1b0d3c79
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 500
+      height: 500
+      anchor: center-center

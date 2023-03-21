@@ -1,0 +1,15 @@
+uuid: 43f099f3-4e3c-42f1-9862-62daf8bbc284
+langcode: en
+status: true
+dependencies: {  }
+name: large_image_style
+label: 'Large (1500px, 100% display size)'
+effects:
+  329d042e-6638-4b35-849b-f8e871b62273:
+    uuid: 329d042e-6638-4b35-849b-f8e871b62273
+    id: image_scale
+    weight: 1
+    data:
+      width: 1500
+      height: null
+      upscale: true

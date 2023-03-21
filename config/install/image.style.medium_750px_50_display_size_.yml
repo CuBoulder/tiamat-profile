@@ -1,0 +1,15 @@
+uuid: 15522182-f786-49e5-8c2e-2bdc2bd6dcce
+langcode: en
+status: true
+dependencies: {  }
+name: medium_750px_50_display_size_
+label: 'Medium (750px, 50% display size)'
+effects:
+  245bbf37-213e-4e1b-b128-c0519b20c39b:
+    uuid: 245bbf37-213e-4e1b-b128-c0519b20c39b
+    id: image_scale
+    weight: 1
+    data:
+      width: 750
+      height: null
+      upscale: true
