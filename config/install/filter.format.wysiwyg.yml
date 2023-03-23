@@ -42,7 +42,7 @@ text-align-justify"> <strong> <em> <sub> <sup> <blockquote> <a href> <ul>
 <ol reversed start> <li> <hr> <table> <tr> <td rowspan colspan> <th 
 rowspan colspan> <thead> <tbody> <tfoot> <caption> <drupal-media 
 data-entity-type data-entity-uuid alt data-view-mode data-align> <abbr 
-title class="ucb_tooltip"><span><span class="sr-only"><span class='ucb-invisible-edit'>
+title class="ucb_tooltip"><span><span class="sr-only"><span class="ucb-invisible-edit">'      
       filter_html_help: true
       filter_html_nofollow: true
   filter_url:
