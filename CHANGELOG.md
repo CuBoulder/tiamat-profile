@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [20230323] - 2023-03-23
+
 ## [20230307] - 2023-03-08
 
 -   ### issue/198 Add Tooltip to wysiwyg
@@ -98,7 +100,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * * *
 
-[Unreleased]: https://github.com/CuBoulder/tiamat-profile/compare/20230307...HEAD
+[Unreleased]: https://github.com/CuBoulder/tiamat-profile/compare/20230323...HEAD
+
+[20230323]: https://github.com/CuBoulder/tiamat-profile/compare/20230307...20230323
 
 [20230307]: https://github.com/CuBoulder/tiamat-profile/compare/20230209...20230307
 
