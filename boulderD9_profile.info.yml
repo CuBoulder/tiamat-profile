@@ -66,6 +66,7 @@ install:
   - features
   - pantheon_advanced_page_cache
   - simple_sitemap
+  - antibot
   - cu_boulder_content_types
   - ucb_admin_menus
   - ucb_site_configuration
