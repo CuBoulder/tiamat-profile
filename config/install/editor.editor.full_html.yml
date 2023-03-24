@@ -31,6 +31,7 @@ settings:
       - code
       - '|'
       - 'Tooltip'
+      - 'Invisible'
   plugins:
     ckeditor5_heading:
       enabled_headings:

@@ -9,6 +9,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Adds 'Invisible' to Toolbar on CKEditor Full HTML and WYSIWYG
+  Resolves https://github.com/CuBoulder/tiamat-theme/issues/257 - Adds a button to apply an Invisible (screen reader only) wrap to selected text, disabling it from the view.
+  
+  Includes:
+  
+  ucb-ckeditor5-plugins => `issue/tiamat-theme-257`
+  tiamat-profile => `issue/tiamat-theme-257`
+---
+
 ## [20230323] - 2023-03-23
 
 ## [20230307] - 2023-03-08
