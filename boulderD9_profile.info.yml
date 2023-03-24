@@ -39,6 +39,7 @@ install:
   - editor
   - ckeditor5
   - ucb_ckeditor5_tooltip
+  - ucb_ckeditor5_invisible
   - webform
   - webform_ui
   - admin_toolbar
