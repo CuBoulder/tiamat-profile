@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Changes dependencies to reflect CKEditor 5 plugin work moving to the new `ucb_ckeditor_plugins` module
+  Resolves CuBoulder/ucb_ckeditor_plugins#8
+  
+  Sister PR in: [tiamat-project-template](https://github.com/CuBoulder/tiamat-project-template/pull/25), [tiamat10-project-template](https://github.com/CuBoulder/tiamat10-project-template/pull/1)
+---
+
 - ### Adds 'Invisible' to Toolbar on CKEditor Full HTML and WYSIWYG
   Resolves https://github.com/CuBoulder/tiamat-theme/issues/257 - Adds a button to apply an Invisible (screen reader only) wrap to selected text, disabling it from the view.
   
