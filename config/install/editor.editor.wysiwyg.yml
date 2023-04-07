@@ -38,7 +38,9 @@ settings:
       - '|'
       - removeFormat
       - '|'
-      - 'Tooltip'
+      - 'box'
+      - 'tooltip'
+      - 'invisible'
   plugins:
     ckeditor5_heading:
       enabled_headings:

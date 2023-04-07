@@ -38,7 +38,7 @@ install:
   - views_ui
   - editor
   - ckeditor5
-  - ucb_ckeditor5_tooltip
+  - ucb_ckeditor_plugins
   - webform
   - webform_ui
   - admin_toolbar
@@ -65,6 +65,7 @@ install:
   - features
   - pantheon_advanced_page_cache
   - simple_sitemap
+  - antibot
   - cu_boulder_content_types
   - ucb_admin_menus
   - ucb_site_configuration
