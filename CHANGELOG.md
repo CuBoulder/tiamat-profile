@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Adds image styles to profile
+  Closes #152 in the Tiamat Theme.
+  Adds necessary profile changes to allow new image styles.
+---
+
 - ### Changes dependencies to reflect CKEditor 5 plugin work moving to the new `ucb_ckeditor_plugins` module
   Resolves CuBoulder/ucb_ckeditor_plugins#8
   

@@ -5,13 +5,19 @@ dependencies:
   config:
     - core.entity_view_mode.media.focal_image_square
     - core.entity_view_mode.media.focal_image_wide
+    - core.entity_view_mode.media.large_image_style
     - core.entity_view_mode.media.media_library
+    - core.entity_view_mode.media.medium_image_style
+    - core.entity_view_mode.media.small_image_style
+    - core.entity_view_mode.media.small_square_image_style
+    - core.entity_view_mode.media.square_thumbnail
+    - core.entity_view_mode.media.wide_image_style
   module:
     - editor
     - entity_embed
     - media
 _core:
-  default_config_hash: Zv4o1oO7Ke2OBOo1r9UAgoodThRjMUJN80_z8fHZkHY
+  default_config_hash: QPTmQxe-7BR8rBwwvw5XRyAvbwqSN8rGET57-nLhBKA
 name: 'Full HTML'
 format: full_html
 weight: 1
@@ -42,7 +48,13 @@ filters:
       allowed_view_modes:
         focal_image_square: focal_image_square
         focal_image_wide: focal_image_wide
+        large_image_style: large_image_style
         media_library: media_library
+        medium_image_style: medium_image_style
+        small_image_style: small_image_style
+        small_square_image_style: small_square_image_style
+        square_thumbnail: square_thumbnail
+        wide_image_style: wide_image_style
       allowed_media_types:
         image: image
         video: video

@@ -1,0 +1,15 @@
+uuid: 53100266-2b4e-48c9-b7af-874a8f11aec3
+langcode: en
+status: true
+dependencies: {  }
+name: small_500px_25_display_size_
+label: 'Small (500px, 25% display size)'
+effects:
+  3d01fad5-7b8f-40c7-8194-457e71c1a75f:
+    uuid: 3d01fad5-7b8f-40c7-8194-457e71c1a75f
+    id: image_scale
+    weight: 1
+    data:
+      width: 500
+      height: null
+      upscale: true
