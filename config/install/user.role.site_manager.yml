@@ -1,10 +1,11 @@
-uuid: 6b2d940e-cb6c-4daf-8270-d1f84061c6ea
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_display.node.basic_page.default
     - filter.format.wysiwyg
+    - media.type.audio
+    - media.type.document
     - media.type.image
     - media.type.video
     - node.type.basic_page
@@ -27,6 +28,7 @@ dependencies:
     - taxonomy.vocabulary.tags
     - taxonomy.vocabulary.ucb_person_job_type
   module:
+    - contact
     - contextual
     - entity_reference_revisions
     - file
@@ -41,33 +43,39 @@ dependencies:
     - system
     - taxonomy
     - toolbar
-    - webform
-id: site_editor
-label: 'Site Editor'
-weight: 4
+    - ucb_site_configuration
+    - ucb_user_invite
+id: site_manager
+label: 'Site Manager'
+weight: 3
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'access content'
   - 'access content overview'
   - 'access contextual links'
   - 'access files overview'
   - 'access media overview'
   - 'access shortcuts'
+  - 'access site reports'
+  - 'access site-wide contact form'
   - 'access taxonomy overview'
   - 'access toolbar'
   - 'access user profiles'
-  - 'access webform help'
-  - 'access webform overview'
+  - 'administer contact forms'
   - 'administer menu'
+  - 'administer ucb external services'
+  - 'administer ucb site'
   - 'configure all basic_page node layout overrides'
   - 'configure any layout'
   - 'configure editable basic_page node layout overrides'
   - 'create and edit custom blocks'
+  - 'create audio media'
   - 'create basic_page content'
+  - 'create document media'
   - 'create form_page content'
   - 'create image media'
   - 'create media'
-  - 'create newsletter content'
   - 'create terms in byline'
   - 'create terms in categories'
   - 'create terms in category'
@@ -80,45 +88,37 @@ permissions:
   - 'create terms in ucb_person_job_type'
   - 'create ucb_article content'
   - 'create ucb_article_list content'
-  - 'create ucb_issue content'
-  - 'create ucb_issue_archive content'
   - 'create ucb_people_list_page content'
   - 'create ucb_person content'
   - 'create url aliases'
   - 'create video media'
-  - 'create webform'
   - 'customize shortcut links'
   - 'delete all revisions'
+  - 'delete any audio media'
   - 'delete any basic_page content'
+  - 'delete any document media'
   - 'delete any form_page content'
   - 'delete any image media'
   - 'delete any media'
-  - 'delete any newsletter content'
   - 'delete any ucb_article content'
   - 'delete any ucb_article_list content'
-  - 'delete any ucb_issue content'
-  - 'delete any ucb_issue_archive content'
   - 'delete any ucb_people_list_page content'
   - 'delete any ucb_person content'
   - 'delete any video media'
   - 'delete basic_page revisions'
   - 'delete form_page revisions'
   - 'delete media'
-  - 'delete newsletter revisions'
   - 'delete orphan revisions'
+  - 'delete own audio media'
   - 'delete own basic_page content'
+  - 'delete own document media'
   - 'delete own form_page content'
   - 'delete own image media'
-  - 'delete own newsletter content'
   - 'delete own ucb_article content'
   - 'delete own ucb_article_list content'
-  - 'delete own ucb_issue content'
-  - 'delete own ucb_issue_archive content'
   - 'delete own ucb_people_list_page content'
   - 'delete own ucb_person content'
   - 'delete own video media'
-  - 'delete own webform'
-  - 'delete own webform submission'
   - 'delete terms in byline'
   - 'delete terms in categories'
   - 'delete terms in category'
@@ -131,34 +131,28 @@ permissions:
   - 'delete terms in ucb_person_job_type'
   - 'delete ucb_article revisions'
   - 'delete ucb_article_list revisions'
-  - 'delete ucb_issue revisions'
-  - 'delete ucb_issue_archive revisions'
   - 'delete ucb_people_list_page revisions'
   - 'delete ucb_person revisions'
+  - 'edit any audio media'
   - 'edit any basic_page content'
+  - 'edit any document media'
   - 'edit any form_page content'
   - 'edit any image media'
-  - 'edit any newsletter content'
   - 'edit any ucb_article content'
   - 'edit any ucb_article_list content'
-  - 'edit any ucb_issue content'
-  - 'edit any ucb_issue_archive content'
   - 'edit any ucb_people_list_page content'
   - 'edit any ucb_person content'
   - 'edit any video media'
+  - 'edit own audio media'
   - 'edit own basic_page content'
+  - 'edit own document media'
   - 'edit own form_page content'
   - 'edit own image media'
-  - 'edit own newsletter content'
   - 'edit own ucb_article content'
   - 'edit own ucb_article_list content'
-  - 'edit own ucb_issue content'
-  - 'edit own ucb_issue_archive content'
   - 'edit own ucb_people_list_page content'
   - 'edit own ucb_person content'
   - 'edit own video media'
-  - 'edit own webform'
-  - 'edit own webform submission'
   - 'edit terms in byline'
   - 'edit terms in categories'
   - 'edit terms in category'
@@ -169,6 +163,9 @@ permissions:
   - 'edit terms in newsletter'
   - 'edit terms in tags'
   - 'edit terms in ucb_person_job_type'
+  - 'edit ucb site appearance'
+  - 'edit ucb site contact info'
+  - 'invite users'
   - 'link to any page'
   - 'revert all revisions'
   - 'revert basic_page revisions'
@@ -189,15 +186,12 @@ permissions:
   - 'view all revisions'
   - 'view basic_page revisions'
   - 'view form_page revisions'
-  - 'view newsletter revisions'
+  - 'view media'
   - 'view own unpublished content'
   - 'view own unpublished media'
-  - 'view own webform submission'
   - 'view the administration theme'
   - 'view ucb_article revisions'
   - 'view ucb_article_list revisions'
-  - 'view ucb_issue revisions'
-  - 'view ucb_issue_archive revisions'
   - 'view ucb_people_list_page revisions'
   - 'view ucb_person revisions'
   - 'view unpublished paragraphs'

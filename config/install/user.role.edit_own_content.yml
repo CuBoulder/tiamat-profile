@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.video
+    - node.type.basic_page
+    - node.type.form_page
+    - node.type.ucb_article
+    - node.type.ucb_article_list
+    - node.type.ucb_people_list_page
+    - node.type.ucb_person
+  module:
+    - media
+    - node
+id: edit_own_content
+label: 'Edit My Own Content'
+weight: 9
+is_admin: null
+permissions:
+  - 'edit own audio media'
+  - 'edit own basic_page content'
+  - 'edit own document media'
+  - 'edit own form_page content'
+  - 'edit own image media'
+  - 'edit own ucb_article content'
+  - 'edit own ucb_article_list content'
+  - 'edit own ucb_people_list_page content'
+  - 'edit own ucb_person content'
+  - 'edit own video media'

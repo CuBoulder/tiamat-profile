@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - webform
+id: webform_editor
+label: 'Webform Editor'
+weight: 11
+is_admin: null
+permissions:
+  - 'access webform overview'
+  - 'administer webform element access'
+  - 'create webform'
+  - 'delete any webform'
+  - 'delete own webform'
+  - 'edit any webform'
+  - 'edit own webform'

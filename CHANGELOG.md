@@ -9,6 +9,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Refactors user roles
+  Change summary:
+  
+  - Site Owner (site_owner) → Site Manager (site_manager)
+  - Site Editor (site_editor) → Content Editor (content_editor)
+  - \+ Site Owner (site_owner)
+  - \+ Edit My Own Content (edit_own_content)
+  - \+ Newsletter (newsletter)
+  - \+ Webform Editor (webform_editor)
+  - \+ Webform Submissions Viewer (webform_submissions_viewer)
+  - \- Configuration Manager (configuration_manager)
+  
+  Resolves CuBoulder/tiamat-theme#329
+---
+
 - ### Adds image styles to profile
   Closes #152 in the Tiamat Theme.
   Adds necessary profile changes to allow new image styles.
