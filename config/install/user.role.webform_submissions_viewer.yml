@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - webform
+id: webform_submissions_viewer
+label: 'Webform Submissions Viewer'
+weight: 12
+is_admin: null
+permissions:
+  - 'view any webform submission'
+  - 'view own webform submission'

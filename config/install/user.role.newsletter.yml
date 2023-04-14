@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.newsletter
+    - node.type.ucb_issue
+    - node.type.ucb_issue_archive
+  module:
+    - node
+id: newsletter
+label: Newsletter
+weight: 10
+is_admin: null
+permissions:
+  - 'create newsletter content'
+  - 'create ucb_issue content'
+  - 'create ucb_issue_archive content'
+  - 'delete any newsletter content'
+  - 'delete any ucb_issue content'
+  - 'delete any ucb_issue_archive content'
+  - 'delete newsletter revisions'
+  - 'delete own newsletter content'
+  - 'delete own ucb_issue content'
+  - 'delete own ucb_issue_archive content'
+  - 'delete ucb_issue revisions'
+  - 'delete ucb_issue_archive revisions'
+  - 'edit any newsletter content'
+  - 'edit any ucb_issue content'
+  - 'edit any ucb_issue_archive content'
+  - 'edit own newsletter content'
+  - 'edit own ucb_issue content'
+  - 'edit own ucb_issue_archive content'
+  - 'revert newsletter revisions'
+  - 'revert ucb_issue revisions'
+  - 'revert ucb_issue_archive revisions'
+  - 'view newsletter revisions'
+  - 'view ucb_issue revisions'
+  - 'view ucb_issue_archive revisions'
