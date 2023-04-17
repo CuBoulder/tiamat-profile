@@ -1,4 +1,4 @@
-# CU Boulder Drupal 9 Install Profile
+# CU Boulder Drupal 10 Install Profile
 
 All notable changes to this project will be documented in this file.
 
