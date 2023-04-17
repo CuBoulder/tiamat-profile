@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### chg: Bumping version compatability for D10 - not don't use with D10
+  
+---
+
 - ### Refactors user roles
   Change summary:
   
