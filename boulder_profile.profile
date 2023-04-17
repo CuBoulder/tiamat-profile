@@ -13,14 +13,14 @@ use Drupal\Core\Form\FormStateInterface;
  *
  * Allows the profile to alter the site configuration form.
  */
-function boulderD10_profile_page_form_install_configure_form_alter(&$form, FormStateInterface $form_state) {
-  $form['#submit'][] = 'boulderD10_profile_form_install_configure_submit';
+function boulder_profile_page_form_install_configure_form_alter(&$form, FormStateInterface $form_state) {
+  $form['#submit'][] = 'boulder_profile_form_install_configure_submit';
 }
 
 /**
  * Submission handler to sync the contact.form.feedback recipient.
  */
-function boulderD10_profile_form_install_configure_submit($form, FormStateInterface $form_state) {
+function boulder_profile_form_install_configure_submit($form, FormStateInterface $form_state) {
   $site_mail = $form_state->getValue('site_mail');
   ContactForm::load('feedback')->setRecipients([$site_mail])->trustData()->save();
 }
@@ -32,13 +32,13 @@ function boulderD10_profile_form_install_configure_submit($form, FormStateInterf
  * Install syslog and uninstall dblog if site is not local
  * Install default content for the site
  */
-function boulderD10_profile_modules_installed( $modules ){
-  if( in_array('boulderD10_profile', $modules )){
+function boulder_profile_modules_installed( $modules ){
+  if( in_array('boulder_profile', $modules )){
     $installer = \Drupal::service('module_installer');
     // install or uninstall modules once the profile has installed
     $installer->install([
       'ucb_default_content'
     ]);
-    \Drupal::logger('boulderD10_profile')->notice('Installed CU Default Homepage Content');
+    \Drupal::logger('boulder_profile')->notice('Installed CU Default Homepage Content');
   }
 }
