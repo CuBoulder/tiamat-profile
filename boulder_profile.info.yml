@@ -1,7 +1,7 @@
-name: CU Boulder D9 Install Profile
+name: CU Boulder Install Profile
 type: profile
-description: "CU Boulder Web Express D9 Installation Profile"
-core_version_requirement: "^9 || ^10"
+description: "CU Boulder Web Express Installation Profile"
+core_version_requirement: "^10"
 # Modules to install to support the profile.
 install:
   - history
