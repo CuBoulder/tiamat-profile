@@ -9,6 +9,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Change: Adds Devel, Redirect, Migrate_plus required modules #26
+  Resolves #321 - Adds redirect, migrate_plus, devel and devel permissions to D9 and D10 project templates and profiles.
+  
+  Includes:
+  
+  - `tiamat-project-template`
+  - `tiamat10-project-template`
+  - `tiamat10-profile`
+  - `tiamat-profile`
+---
+
 - ### chg: Bumping version compatability for D10 - not don't use with D10
   
 ---

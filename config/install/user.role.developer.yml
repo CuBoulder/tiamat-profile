@@ -1,3 +1,4 @@
+uuid: 26b58cb8-b6cc-4ba6-9cf1-06d065db365f
 langcode: en
 status: true
 dependencies:
@@ -39,6 +40,8 @@ dependencies:
     - contact
     - contextual
     - crop
+    - devel
+    - devel_generate
     - embed
     - entity_reference_revisions
     - externalauth
@@ -63,6 +66,8 @@ dependencies:
     - ucb_user_invite
     - views_ui
     - webform
+_core:
+  default_config_hash: m1jzlHzzbhqBTVx0C84uTVMVORh5MsFUeUTFCl8VNMs
 id: developer
 label: Developer
 weight: 2
@@ -73,6 +78,7 @@ permissions:
   - 'access content'
   - 'access content overview'
   - 'access contextual links'
+  - 'access devel information'
   - 'access files overview'
   - 'access media overview'
   - 'access news feeds'
@@ -108,6 +114,7 @@ permissions:
   - 'administer content types'
   - 'administer crop'
   - 'administer crop types'
+  - 'administer devel_generate'
   - 'administer display modes'
   - 'administer embed buttons'
   - 'administer filters'
@@ -314,6 +321,7 @@ permissions:
   - 'revert ucb_person revisions'
   - 'search content'
   - 'switch shortcut sets'
+  - 'switch users'
   - 'synchronize configuration'
   - 'update any media'
   - 'update media'

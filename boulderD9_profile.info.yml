@@ -66,6 +66,10 @@ install:
   - pantheon_advanced_page_cache
   - simple_sitemap
   - antibot
+  - redirect
+  - migrate_plus
+  - devel
+  - devel_generate
   - cu_boulder_content_types
   - ucb_admin_menus
   - ucb_site_configuration
