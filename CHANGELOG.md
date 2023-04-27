@@ -9,6 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Adds two minor changes
+  - Decreases the weight of the home link in the main menu to a very small number (`-999`) to ensure it always appears first on the left. Resolves CuBoulder/tiamat-theme#351
+  - Increases the maximum image upload size from `2 MB` to `24 MB`. Resolves CuBoulder/tiamat-theme#353
+  
+  Sister PR in: [tiamat10-profile](https://github.com/CuBoulder/tiamat10-profile/pull/4)
+---
+
 - ### Change: Adds Devel, Redirect, Migrate_plus required modules #26
   Resolves #321 - Adds redirect, migrate_plus, devel and devel permissions to D9 and D10 project templates and profiles.
   
