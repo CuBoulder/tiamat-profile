@@ -69,6 +69,7 @@ permissions:
   - 'configure all basic_page node layout overrides'
   - 'configure any layout'
   - 'configure editable basic_page node layout overrides'
+  - 'configure ucb related articles'
   - 'create and edit custom blocks'
   - 'create audio media'
   - 'create basic_page content'
