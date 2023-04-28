@@ -147,7 +147,6 @@ permissions:
   - 'administer taxonomy_term form display'
   - 'administer themes'
   - 'administer ucb external services'
-  - 'administer ucb site'
   - 'administer url aliases'
   - 'administer user display'
   - 'administer user fields'

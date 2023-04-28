@@ -65,7 +65,6 @@ permissions:
   - 'administer contact forms'
   - 'administer menu'
   - 'administer ucb external services'
-  - 'administer ucb site'
   - 'configure all basic_page node layout overrides'
   - 'configure any layout'
   - 'configure editable basic_page node layout overrides'

@@ -77,7 +77,6 @@ permissions:
   - 'administer news feeds'
   - 'administer search'
   - 'administer ucb external services'
-  - 'administer ucb site'
   - 'administer user invite'
   - 'administer users'
   - 'administer webform element access'
