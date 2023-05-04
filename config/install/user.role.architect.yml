@@ -1,4 +1,3 @@
-uuid: e9db6418-284f-4afd-a2f9-a6aba93bbcd9
 langcode: en
 status: true
 dependencies:
@@ -51,8 +50,6 @@ dependencies:
     - ucb_site_configuration
     - ucb_user_invite
     - webform
-_core:
-  default_config_hash: pgmHZ6mQlyDIeRhmqLKaiUTOL5N-vOGYjL1cUjaHE5I
 id: architect
 label: Architect
 weight: 3
@@ -80,13 +77,13 @@ permissions:
   - 'administer news feeds'
   - 'administer search'
   - 'administer ucb external services'
-  - 'administer ucb site'
   - 'administer user invite'
   - 'administer users'
   - 'administer webform element access'
   - 'configure all basic_page node layout overrides'
   - 'configure any layout'
   - 'configure editable basic_page node layout overrides'
+  - 'configure ucb related articles'
   - 'create and edit custom blocks'
   - 'create audio media'
   - 'create basic_page content'

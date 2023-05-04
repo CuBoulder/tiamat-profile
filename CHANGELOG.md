@@ -9,6 +9,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Adds a global "Related articles" configuration form to CU Boulder Site Settings
+  This update adds a "Related articles" configuration form to CU Boulder Site Settings, accessible via the menu or `/admin/config/cu-boulder/related-articles`. Here users with permission can exclude articles with specific categories or tags from appearing in "related articles" sections. CuBoulder/ucb_site_configuration#22
+  
+  This update also fixes a bug which caused warnings to appear when configuring a third-party service. CuBoulder/ucb_site_configuration#21
+  
+  Sister PR in: [ucb_site_configuration](https://github.com/CuBoulder/ucb_site_configuration/pull/23), [tiamat10-profile](https://github.com/CuBoulder/tiamat10-profile/pull/7)
+---
+
 - ### Adds two minor changes
   - Decreases the weight of the home link in the main menu to a very small number (`-999`) to ensure it always appears first on the left. Resolves CuBoulder/tiamat-theme#351
   - Increases the maximum image upload size from `2 MB` to `24 MB`. Resolves CuBoulder/tiamat-theme#353
