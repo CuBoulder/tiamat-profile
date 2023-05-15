@@ -39,6 +39,7 @@ settings:
       - removeFormat
       - '|'
       - 'box'
+      - 'map'
       - 'tooltip'
       - 'invisible'
   plugins:
