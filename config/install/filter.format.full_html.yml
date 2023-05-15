@@ -106,3 +106,9 @@ filters:
     status: false
     weight: -42
     settings: {  }
+  filter_map_embed:
+    id: filter_map_embed
+    provider: ucb_ckeditor_plugins
+    status: true
+    weight: 10
+    settings: {  }
