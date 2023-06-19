@@ -34,6 +34,7 @@ settings:
       - 'map'
       - 'tooltip'
       - 'invisible'
+      - 'button'
   plugins:
     ckeditor5_heading:
       enabled_headings:
