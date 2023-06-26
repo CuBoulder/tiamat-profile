@@ -78,6 +78,8 @@ install:
   - ucb_focal_image_enable
   - ucb_bootstrap_layouts
   - media_library_form_element
+  - shortcode
+  - ucb_migration_shortcodes
   
 # Required modules
 # Note that any dependencies of the modules listed here will be installed automatically.
