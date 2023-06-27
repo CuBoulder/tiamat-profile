@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Update Filters
+  Updated filters and profile to add shortcode, ucb_migration_shortcode to the install.
+  
+  Sister Repo: https://github.com/CuBoulder/tiamat-project-template/pull/27
+---
+
 - ### Adds Google Maps support in Map CKEditor plugin
   This update adds support for Google Maps embeds via an embed code taken from Google Maps.
   
