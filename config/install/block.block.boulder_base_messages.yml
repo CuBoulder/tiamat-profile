@@ -4,9 +4,9 @@ dependencies:
   module:
     - system
   theme:
-    - boulderD9_base
-id: boulderD9_base_messages
-theme: boulderD9_base
+    - boulder_base
+id: boulder_base_messages
+theme: boulder_base
 region: above_content
 weight: -3
 provider: null

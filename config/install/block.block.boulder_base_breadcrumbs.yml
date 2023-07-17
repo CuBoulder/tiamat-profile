@@ -4,9 +4,9 @@ dependencies:
   module:
     - system
   theme:
-    - boulderD9_base
-id: boulderD9_base_breadcrumbs
-theme: boulderD9_base
+    - boulder_base
+id: boulder_base_breadcrumbs
+theme: boulder_base
 region: breadcrumb
 weight: 0
 provider: null
