@@ -4,9 +4,9 @@ dependencies:
   module:
     - ucb_site_configuration
   theme:
-    - boulderD9_base
+    - boulder_base
 id: site_contact_info_footer
-theme: boulderD9_base
+theme: boulder_base
 region: footer
 weight: 0
 provider: null

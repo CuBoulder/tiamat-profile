@@ -4,9 +4,9 @@ dependencies:
   module:
     - help
   theme:
-    - boulderD9_base
-id: boulderD9_base_help
-theme: boulderD9_base
+    - boulder_base
+id: boulder_base_help
+theme: boulder_base
 region: content
 weight: -30
 provider: null

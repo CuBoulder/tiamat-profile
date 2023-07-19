@@ -6,9 +6,9 @@ dependencies:
   module:
     - system
   theme:
-    - boulderD9_base
-id: boulderD9_base_main_menu
-theme: boulderD9_base
+    - boulder_base
+id: boulder_base_main_menu
+theme: boulder_base
 region: primary_menu
 weight: 0
 provider: null

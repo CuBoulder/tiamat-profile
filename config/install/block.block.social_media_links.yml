@@ -7,9 +7,9 @@ dependencies:
   module:
     - system
   theme:
-    - boulderD9_base
+    - boulder_base
 id: social_media_links
-theme: boulderD9_base
+theme: boulder_base
 region: social
 weight: 0
 provider: null
