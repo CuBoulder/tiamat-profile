@@ -112,3 +112,9 @@ filters:
     status: true
     weight: 10
     settings: {  }
+  filter_calendar_embed:
+    id: filter_calendar_embed
+    provider: ucb_ckeditor_plugins
+    status: true
+    weight: 10
+    settings: {  }

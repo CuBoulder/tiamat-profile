@@ -39,10 +39,11 @@ settings:
       - removeFormat
       - '|'
       - 'box'
+      - 'button'
       - 'map'
+      - 'calendar'
       - 'tooltip'
       - 'invisible'
-      - 'button'
   plugins:
     ckeditor5_heading:
       enabled_headings:
@@ -59,7 +60,6 @@ settings:
         - left
         - center
         - right
-        - justify
     media_media:
       allow_view_mode_override: true
 image_upload:
